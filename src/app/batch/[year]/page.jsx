@@ -40,7 +40,34 @@ const page = async ({ params }) => {
         { img: "/batch23/10.webp" },
     ],
 
-    
+    2022: [
+      { img: "/batch22/1.webp" },
+      { img: "/batch22/2.webp" },
+        { img: "/batch22/3.webp" },
+        { img: "/batch22/4.webp" },
+
+        { img: "/batch22/5.webp" },
+        { img: "/batch22/6.webp" },
+        { img: "/batch22/7.webp" },
+        { img: "/batch22/8.webp" },
+        { img: "/batch22/9.webp" },
+        { img: "/batch22/10.webp" },
+    ],
+    2021: [
+        { img: "/batch21/1.webp" },
+
+        { img: "/batch21/2.webp" },
+        { img: "/batch21/3.webp" },
+        { img: "/batch21/4.webp" },
+        { img: "/batch21/5.webp" },
+        { img: "/batch21/6.webp" },
+        { img: "/batch21/7.webp" },
+        { img: "/batch21/8.webp" },
+        { img: "/batch21/9.webp" },
+        { img: "/batch21/10.webp" },
+    ],
+
+
 
 
 
@@ -56,7 +83,8 @@ const page = async ({ params }) => {
 
   };
 
-  const year = await params.year;
+  const p  = await params;
+  const year = p.year;
   const images = batchData[year] || [];
 
   return (
