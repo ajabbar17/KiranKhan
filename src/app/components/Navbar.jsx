@@ -14,7 +14,7 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden absolute top-8 left-6 text-white hover:text-orange-400 transition"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu className=" " size={36} />}
         </button>
 
         {/* Desktop Center Nav */}
@@ -30,10 +30,10 @@ export default function Navbar() {
             href="#teaching"
             className="text-white hover:text-orange-400 transition"
           >
-            Teaching Portfolio
+            About
           </a>
           <a
-            href="/exhibitons"
+            href="/exhibitions"
             className="text-white hover:text-orange-400 transition"
           >
             Exhibitions

@@ -47,8 +47,8 @@ export default function ProjectAccordions() {
   };
 
   return (
-    <div className="bg-black min-h-screen py-16 px-4">
-      <h1 className="heading text-5xl text-center font-bold mb-7 ">
+    <div className="bg-black xl:min-h-screen py-6  xl:py-16 px-4">
+      <h1 className="heading text-3xl md:text-5xl text-center font-bold mb-7 ">
         COLLABORATIONS
       </h1>
       <div className="max-w-6xl mx-auto">
@@ -57,18 +57,18 @@ export default function ProjectAccordions() {
             <div key={index} className="border border-white">
               {/* Accordion Header */}
               <div
-                className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-900 transition-colors duration-200"
+                className="flex items-center justify-between p-2 md:p-6 cursor-pointer hover:bg-gray-900 transition-colors duration-200"
                 onClick={() => toggleAccordion(index)}
               >
-                <div className="flex items-center space-x-8">
-                  <span className="text-white text-2xl font-bold min-w-[3rem]">
+                <div className="flex items-center space-x-2 md:space-x-8">
+                  <span className="text-white text-xl md:text-2xl font-bold min-w-[3rem]">
                     {project.id}
                   </span>
-                  <h3 className="text-white text-xl font-medium">
+                  <h3 className="text-white text-lg md:text-xl font-medium">
                     {project.title}
                   </h3>
                 </div>
-                <div className="text-white text-2xl transition-transform duration-300 ease-in-out">
+                <div className="text-white text-xl md:text-2xl transition-transform duration-300 ease-in-out">
                   <span
                     className={`inline-block transition-transform duration-300 ${
                       openAccordion === index ? "rotate-45" : "rotate-0"
@@ -88,8 +88,8 @@ export default function ProjectAccordions() {
                 }`}
               >
                 <div className="border-t border-white bg-black">
-                  <div className="p-6 pl-20">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div className="p-3 md:p-6 md:pl-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2  md:gap-8 md:mb-6">
                       <div>
                         <div className="mb-4">
                           <span className="text-white font-semibold text-lg">
@@ -108,7 +108,7 @@ export default function ProjectAccordions() {
                       </div>
                     </div>
 
-                    <div className="mt-6">
+                    <div className="mt-3 md:mt-6">
                       <p className="text-gray-300 text-lg leading-relaxed">
                         {project.description}
                       </p>

@@ -4,21 +4,21 @@ import React, { useState } from "react";
 const exhibitionsData = [
   {
     title: "DS Opening",
-    images: ["/project1.webp", "/project1.webp", "/project1.webp"],
+    images: ["/ds2.webp", "/ds.webp", "/ds1.webp"],
   },
   {
     title: "KK as Executive",
-    images: ["/project1.webp", "/project1.webp", "/project1.webp"],
+    images: ["/profile.webp", "/kk.webp", "/kk1.webp"],
   },
   {
     title: "Jugaar",
-    images: ["/project1.webp", "/project1.webp", "/project1.webp"],
+    images: ["/jugaar.webp", "/jugaar1.webp", "/fan.webp"],
   },
 ];
 
 export default function Exhibitions() {
   return (
-    <section className="relative bg-black text-white py-16">
+    <section className="relative bg-black text-white py-16 px-3">
       <h2 className="text-[#F49440] text-center text-3xl md:text-5xl font-bold mb-12">
         EXHIBITIONS
       </h2>
@@ -28,7 +28,7 @@ export default function Exhibitions() {
         className="w-[100px] mt-3 border  border-[#ffffffa7]"
         > </span>
       </h2>
-      <div className="relative w-full h-[300vh] max-w-5xl mx-auto">
+      <div className="relative w-full h-[180vh] xl:h-[300vh] max-w-5xl mx-auto">
         {exhibitionsData.map((exhibit, index) => (
           <ExhibitionCard key={index} exhibit={exhibit} index={index} />
         ))}
@@ -59,21 +59,21 @@ function ExhibitionCard({ exhibit, index }) {
         // When first image is active, it should be centered
         return {
           0: "transform translate-x-0", // Active - center
-          1: "transform translate-x-16 md:translate-x-[500px]", // Right
-          2: "transform translate-x-32 md:-translate-x-[500px]", // Far right
+          1: "transform translate-x-[150px] md:translate-x-[380px] xl:translate-x-[500px]", // Right
+          2: "transform -translate-x-[150px] md:-translate-x-[380px] xl:-translate-x-[500px]", // Far right
         }[imageIndex];
       } else if (currentIndex === 1) {
         // When middle image is active, it should be centered
         return {
-          0: "transform -translate-x-16 md:translate-x-[500px]", // Left
+          0: "transform translate-x-[150px] md:translate-x-[380px] xl:translate-x-[500px]", // Left
           1: "transform translate-x-0", // Active - center
-          2: "transform translate-x-16 md:-translate-x-[500px]", // Right
+          2: "transform -translate-x-[150px] md:-translate-x-[380px] xl:-translate-x-[500px]", // Right
         }[imageIndex];
       } else if (currentIndex === 2) {
         // When last image is active, it should be centered
         return {
-          0: "transform -translate-x-32 md:translate-x-[500px]", // Far left
-          1: "transform -translate-x-16 md:-translate-x-[500px]", // Left
+          0: "transform translate-x-[150px] md:translate-x-[380px] xl:translate-x-[500px]", // Far left
+          1: "transform -translate-x-[150px] md:-translate-x-[380px] xl:-translate-x-[500px]", // Left
           2: "transform translate-x-0", // Active - center
         }[imageIndex];
       }
@@ -98,22 +98,22 @@ function ExhibitionCard({ exhibit, index }) {
       </h3>
 
       {/* Carousel - All images visible */}
-      <div className="relative rounded-lg w-full h-64 md:h-[70vh] flex items-center justify-center p-4 overflow-hidden">
+      <div className="relative rounded-lg w-full h-[40vh] xl:h-[70vh] flex items-center justify-center p-4 overflow-hidden">
         <div className="relative flex items-center justify-center w-full h-full">
           {exhibit.images.map((img, i) => (
             <div
               key={i}
               className={`absolute transition-all duration-500 cursor-pointer ${
                 i === current
-                  ? "scale-110 z-10 w-48 md:w-1/2"
-                  : "scale-75 z-0 w-32 md:w-1/3"
+                  ? "scale-110 z-10 w-[60%] xl:w-1/2"
+                  : "scale-75 z-0 w-[30%] xl:w-1/3"
               } ${getImagePositioning(i, current, exhibit.images.length)}`}
               onClick={() => setCurrent(i)}
             >
               <img
                 src={img}
                 alt={`${exhibit.title} - Image ${i + 1}`}
-                className={`w-full h-48 md:h-[50vh] object-fill rounded-xl shadow-lg transition-all duration-500 ${
+                className={`w-full h-48 md:h-[30vh]  xl:h-[50vh] object-fill rounded-xl shadow-lg transition-all duration-500 ${
                   i === current ? "opacity-100" : "opacity-60 hover:opacity-80"
                 }`}
               />

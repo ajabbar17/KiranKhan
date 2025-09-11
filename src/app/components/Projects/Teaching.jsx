@@ -7,7 +7,7 @@ const Teaching = () => {
     { id: 2, title: "Batch 2024", img: "/batch24.webp", link: "/batch/2024" },
     { id: 3, title: "Batch 2023", img: "/batch23.webp", link: "/batch/2023" },
     { id: 4, title: "Batch 2022", img: "/batch22.webp", link: "/batch/2022" },
-    { id: 5, title: "Batch 2021", img: "/batch21.webp", link: "/batch/2021" },
+    { id: 5, title: "Batch 2021", img: "/batch21/2.webp", link: "/batch/2021" },
     { id: 6, title: "Batch 2020", img: "/batch20.webp", link: "/batch/2020" },
     { id: 7, title: "Batch 2019", img: "/batch19.webp", link: "/batch/2019" },
     { id: 8, title: "Batch 2018", img: "/batch18.webp", link: "/batch/2018" },
@@ -25,7 +25,7 @@ const Teaching = () => {
     <section className="bg-black text-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#F49440] uppercase">
+        <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 text-[#F49440] uppercase">
           Teaching Experience
         </h1>
 

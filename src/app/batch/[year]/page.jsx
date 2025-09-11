@@ -66,19 +66,115 @@ const page = async ({ params }) => {
         { img: "/batch21/9.webp" },
         { img: "/batch21/10.webp" },
     ],
+    2020: [
+        { img: "/batch20/1.webp" },
+        { img: "/batch20/2.webp" },
+        { img: "/batch20/3.webp" },
+        { img: "/batch20/4.webp" },
+        { img: "/batch20/5.webp" },
+        { img: "/batch20/6.webp" },
+        { img: "/batch20/7.webp" },
+        { img: "/batch20/8.webp" },
+        { img: "/batch20/9.webp" },
+    ],
+    2019: [ 
+         { img: "/batch19/1.webp" },
+        { img: "/batch19/2.webp" },
+        { img: "/batch19/3.webp" },
+        { img: "/batch19/4.webp" },
+        { img: "/batch19/5.webp" },
+        { img: "/batch19/6.webp" },
+        { img: "/batch19/7.webp" },
+        { img: "/batch19/8.webp" },
+        { img: "/batch19/9.webp" },
+        { img: "/batch19/10.webp" },
+    ],
+    2018: [
+        { img: "/batch18/1.webp" },
+        { img: "/batch18/2.webp" },
+        { img: "/batch18/3.webp" },
+        { img: "/batch18/4.webp" },
+        { img: "/batch18/5.webp" },
+        { img: "/batch18/6.webp" },
+        { img: "/batch18/7.webp" },
+        { img: "/batch18/8.webp" },
+        { img: "/batch18/9.webp" },
+        { img: "/batch18/10.webp" },
+    ],
+    2017: [
+        { img: "/batch17/1.webp" },
+        { img: "/batch17/2.webp" },
+        { img: "/batch17/3.webp" },
+        { img: "/batch17/4.webp" },
+        { img: "/batch17/5.webp" },
+        { img: "/batch17/6.webp" },
+        { img: "/batch17/7.webp" },
+        { img: "/batch17/8.webp" },
+        { img: "/batch17/9.webp" },
+        { img: "/batch17/10.webp" },    
+    ],
+    2016: [
+        { img: "/batch16/1.webp" },
+        { img: "/batch16/2.webp" },
+        { img: "/batch16/3.webp" },
+        { img: "/batch16/4.webp" },
+        { img: "/batch16/5.webp" },
+        { img: "/batch16/6.webp" },
+        { img: "/batch16/7.webp" },
+        { img: "/batch16/8.webp" },
+        { img: "/batch16/9.webp" },
+        { img: "/batch16/10.webp" },
+    ],
+    2015: [
+        { img: "/batch15/1.webp" },
+        { img: "/batch15/2.webp" },
+        { img: "/batch15/3.webp" },
+        { img: "/batch15/4.webp" },
+        { img: "/batch15/5.webp" },
+        { img: "/batch15/6.webp" },
+        { img: "/batch15/7.webp" },
+        { img: "/batch15/8.webp" },
+        { img: "/batch15/9.webp" },
+        { img: "/batch15/10.webp" },
+    ],
+    2011: [
+        { img: "/batch11/1.webp" },
+        { img: "/batch11/2.webp" },
+        { img: "/batch11/3.webp" },
+        { img: "/batch11/4.webp" },
+        { img: "/batch11/5.webp" },
+        { img: "/batch11/6.webp" },
+        { img: "/batch11/7.webp" },
+        { img: "/batch11/8.webp" },
+        { img: "/batch11/9.webp" },
+        { img: "/batch11/10.webp" },
+    ],
+    2010: [
+        { img: "/batch10.webp" },
+    ],
+    2009: [
+        { img: "/batch9/1.webp" },
+        { img: "/batch9/2.webp" },
+        { img: "/batch9/3.webp" },
+        { img: "/batch9/4.webp" },
+        { img: "/batch9/5.webp" },
+        { img: "/batch9/6.webp" },],
+    2008: [ 
+        { img: "/batch8/1.webp" },
+        { img: "/batch8/2.webp" },
+        { img: "/batch8/3.webp" },
+        { img: "/batch8/4.webp" },
+        { img: "/batch8/5.webp" },
+        { img: "/batch8/6.webp" },
+        { img: "/batch8/7.webp" },
+        { img: "/batch8/8.webp" },
+        { img: "/batch8/9.webp" },
+        { img: "/batch8/10.webp" },
+    ],
+    2007: [
+        { img: "/batch7.webp" },
 
-
-
-
-
-
-
-
-
-
-
-
-
+    ],
 
 
   };
@@ -119,3 +215,24 @@ const page = async ({ params }) => {
 };
 
 export default page;
+
+export async function generateStaticParams() {
+  return [
+    { year: "2025" },
+    { year: "2024" },
+    { year: "2023" },
+    { year: "2022" },
+    { year: "2021" },
+    { year: "2020" },
+    { year: "2019" },
+    { year: "2018" },
+    { year: "2017" },
+    { year: "2016" },
+    { year: "2015" },
+    { year: "2011" },
+    { year: "2010" },
+    { year: "2009" },
+    { year: "2008" },
+    { year: "2007" },
+  ];
+}
