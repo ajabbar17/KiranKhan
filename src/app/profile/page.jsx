@@ -11,7 +11,7 @@ const page = () => {
     {
       id: 1,
       title: "Project Blue Print",
-      images: ["/blue5.JPG", "/blue2.JPG", "/blue3.JPG", "/blue4.JPG"],
+      images: ["/blue5.JPG", "/blue2.JPG", "/blue3.JPG", "/blue4.jpg"],
     }
   ]
 
