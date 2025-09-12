@@ -35,7 +35,7 @@ export default function Awards() {
   };
 
   return (
-    <section className="w-full h-[100vh] lg:h-[95vh]  py-20 flex flex-col items-center text-white">
+    <section className="w-full min-h-[100vh] lg:h-[95vh]  py-20 flex flex-col items-center text-white">
       <div className=" 2xl:min-w-5xl text-center xl:text-left ">
         <h2 className="text-3xl font-bold mb-2 text-[#FFD400]">AWARDS</h2>
       </div>
