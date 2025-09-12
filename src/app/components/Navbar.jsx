@@ -63,6 +63,7 @@ export default function Navbar() {
               <div className="absolute top-10 left-0 bg-black/80 text-white rounded-lg shadow-lg w-60 border border-white/20">
                 <Link
                   href="/womenifesto"
+                  onClick={() => setIsOpen(!isOpen)}
                   className="block px-4 py-2 hover:bg-orange-500 transition"
                 >
                   Wemend Womenifesto
@@ -70,6 +71,7 @@ export default function Navbar() {
                 <Link
                   href="/death-of-booti"
                   className="block px-4 py-2 hover:bg-orange-500 transition"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Death of Booti
                 </Link>
