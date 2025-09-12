@@ -33,7 +33,7 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <motion.h2
-          className="heading text-5xl font-bold text-center mb-16 tracking-wider"
+          className="heading text-3xl md:text-5xl font-bold text-center mb-16 tracking-wider"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
