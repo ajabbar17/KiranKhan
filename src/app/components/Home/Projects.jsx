@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const projects = [
@@ -45,7 +46,10 @@ export default function Projects() {
             `}
             >
               {/* Background Image */}
-              <img
+              <Image
+                width={800}
+                height={600}
+                loading="lazy"
                 src={project.img}
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

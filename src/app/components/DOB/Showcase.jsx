@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Showcase = () => {
   const data = [
@@ -29,9 +30,11 @@ const Showcase = () => {
              
                 <div className="block cursor-default">
                   <div className="relative overflow-hidden shadow-lg">
-                    <img
+                    <Image
+                      width={800}
+                      height={600}
                       src={batch.img}
-                      alt={batch.title}
+                      alt={batch.img}
                       className="w-full h-64 md:h-[70vh] object-cover opacity-70"
                     />
                   </div>

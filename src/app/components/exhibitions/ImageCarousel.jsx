@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function ImageCarousel({ images }) {
   const [current, setCurrent] = useState(0);
@@ -106,7 +107,9 @@ export default function ImageCarousel({ images }) {
               key={index}
               className="flex-shrink-0 px-1 sm:px-2 w-full sm:w-1/2"
             >
-              <img
+              <Image
+                width={800}
+                height={600}
                 src={image}
                 alt={`Image ${index + 1}`}
                 className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-fill rounded-lg"

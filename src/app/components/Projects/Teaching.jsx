@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Teaching = () => {
   const data = [
@@ -36,7 +37,10 @@ const Teaching = () => {
               {batch.link ? (
                 <Link href={batch.link} className="block">
                   <div className="relative overflow-hidden  shadow-lg transition-transform duration-300 group-hover:scale-105">
-                    <img
+                    <Image
+                      width={800}
+                      height={600}
+                      loading="lazy"
                       src={batch.img}
                       alt={batch.title}
                       className="w-full h-64 md:h-[70vh] object-cover transition-transform duration-300 group-hover:scale-110"
@@ -50,7 +54,10 @@ const Teaching = () => {
               ) : (
                 <div className="block cursor-default">
                   <div className="relative overflow-hidden rounded-lg shadow-lg">
-                    <img
+                    <Image
+                      width={800}
+                      height={600}
+                      loading="lazy"
                       src={batch.img}
                       alt={batch.title}
                       className="w-full h-64 md:h-80 object-cover opacity-70"

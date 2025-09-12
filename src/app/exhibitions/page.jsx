@@ -1,6 +1,7 @@
 import React from "react";
 import ExhibitionContent from "../components/exhibitions/ExhibitionContent";
 import ImageCarousel from "../components/exhibitions/ImageCarousel";
+import VideoPlayer from "../components/exhibitions/VideoPlayer";
 
 const exhibitions = [
   {
@@ -100,7 +101,16 @@ const exhibitions = [
 ];
 
 
-
+const retrospective = {
+  title: "Retrospective",
+  description:"Retrospective: Fibre and Textile Expression” at Articulate Studios, Lahore, showcased works by 21 graduates of BNU’s Textile, Fashion, and Accessory program, celebrating 20 years of the department. Curated by Kiran Khan, Faseeh Saleem, and Eisha Liaqat, the exhibition highlighted how fibre and textile extend beyond craft into powerful forms of contemporary art. From Fahad Hussayn’s sculptural garments and Faseeh Saleem’s visceral video works to poignant installations by Aiman Gillani, Rafia Shafiq, and Anam Khurram, the show explored themes of memory, identity, trauma, and cultural history. The diverse works reaffirmed textile as a dynamic medium that bridges tradition and innovation.",
+  images: [
+    "/ret2.jpg",
+    "/ret1.jpg",
+    "/ret3.webp",],
+  pdfLink: "/pdf/retrospective.pdf",
+  videosrc: "/retrospective.mp4",
+}
 
 const page = () => {
  return (
@@ -116,6 +126,18 @@ const page = () => {
           <ImageCarousel images={exhibit.images} />
         </div>
       ))}
+
+      <div>
+        <ExhibitionContent title={retrospective.title} description={retrospective.description} pdfLink={retrospective.pdfLink} />
+        <ImageCarousel images={retrospective.images} />
+        <div className="flex justify-center mt-8 px-3">
+          <VideoPlayer
+            src={retrospective.videosrc}
+            className="w-full max-w-4xl rounded-lg"
+          />
+        </div>
+      </div>
+
     </section>
   );
 }

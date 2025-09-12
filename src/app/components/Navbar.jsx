@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { ChevronDown, ExternalLink, Menu, X } from "lucide-react"; // for icons
 
 export default function Navbar() {
@@ -14,30 +15,34 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden absolute top-8 left-6 text-white hover:text-orange-400 transition"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu className=" " size={36} />}
+          {isMobileMenuOpen ? (
+            <X size={24} />
+          ) : (
+            <Menu className=" " size={36} />
+          )}
         </button>
 
         {/* Desktop Center Nav */}
-        <div className="hidden md:flex space-x-8 border bg-black/30 backdrop-blur-2xl border-white/20 rounded-full px-6 py-2">
-          <a
+        <div className="hidden md:flex space-x-8 border bg-black/30 backdrop-blur-2xl border-white/20 rounded-full px-6 py-3">
+          <Link
             href="/"
             className="text-white hover:text-orange-400 transition"
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="#teaching"
+          <Link
+            href="/about"
             className="text-white hover:text-orange-400 transition"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="/exhibitions"
             className="text-white hover:text-orange-400 transition"
           >
             Exhibitions
-          </a>
+          </Link>
 
           {/* Dropdown */}
           <div className="relative">
@@ -50,18 +55,18 @@ export default function Navbar() {
 
             {isOpen && (
               <div className="absolute top-10 left-0 bg-black/80 text-white rounded-lg shadow-lg w-60 border border-white/20">
-                <a
-                  href="#womenifesto"
+                <Link
+                  href="/womenifesto"
                   className="block px-4 py-2 hover:bg-orange-500 transition"
                 >
                   Wemend Womenifesto
-                </a>
-                <a
-                  href="#death-of-buti"
+                </Link>
+                <Link
+                  href="/death-of-buti"
                   className="block px-4 py-2 hover:bg-orange-500 transition"
                 >
                   Death of Buti
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -111,21 +116,28 @@ export default function Navbar() {
 
             {/* Sidebar Content */}
             <div className="flex flex-col flex-1 p-6 space-y-6">
-              <a
-                href="#about"
+              <Link
+                href="/"
+                className="text-white hover:text-orange-400 transition text-lg py-2 border-b border-white/10"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
                 className="text-white hover:text-orange-400 transition text-lg py-2 border-b border-white/10"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
-              </a>
-
-              <a
-                href="#teaching"
+              </Link>
+              <Link
+                href="/exhibitions"
                 className="text-white hover:text-orange-400 transition text-lg py-2 border-b border-white/10"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Teaching Portfolio
-              </a>
+                Exhibitions
+              </Link>
+
 
               {/* Mobile Projects Dropdown */}
               <div className="space-y-3">
@@ -148,8 +160,8 @@ export default function Navbar() {
                   }`}
                 >
                   <div className="pl-4 space-y-3">
-                    <a
-                      href="#womenifesto"
+                    <Link
+                      href="/womenifesto"
                       className="block text-white/80 hover:text-orange-400 transition py-1"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -157,9 +169,9 @@ export default function Navbar() {
                       }}
                     >
                       Wemend Womenifesto
-                    </a>
-                    <a
-                      href="#death-of-buti"
+                    </Link>
+                    <Link
+                      href="/death-of-buti"
                       className="block text-white/80 hover:text-orange-400 transition py-1"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -167,7 +179,7 @@ export default function Navbar() {
                       }}
                     >
                       Death of Buti
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
