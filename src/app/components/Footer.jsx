@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-6">
                 <div className="relative">
-                  <h3 className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-[#F49440] via-[#FF6B35] to-[#F49440] bg-clip-text text-transparent animate-gradient bg-300% leading-tight">
+                  <h3 className="text-5xl lg:text-6xl font-black bg-white bg-clip-text text-transparent animate-gradient bg-300% leading-tight">
                     KIRAN KHAN
                   </h3>
                   {/* Glowing underline effect */}
@@ -109,9 +109,9 @@ const Footer = () => {
               <nav className="space-y-3">
                 {[
                   { href: "/", label: "Home", desc: "Welcome & Overview" },
-                  { href: "/about", label: "About", desc: "My Journey & Vision" },
+                  { href: "/profile", label: "Profile", desc: "My Journey & Vision" },
                   { href: "/exhibitions", label: "Exhibitions", desc: "Gallery & Shows" },
-                  { href: "/death-of-buti", label: "Death of Buti", desc: "Featured Project" },
+                  { href: "/death-of-booti", label: "Death of Boti", desc: "Featured Project" },
                   { href: "/womenifesto", label: "Womenifesto", desc: "Empowerment Initiative" }
                 ].map((link, index) => (
                   <Link

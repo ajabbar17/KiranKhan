@@ -28,10 +28,9 @@ export default function Hero() {
       style={{
         backgroundImage: "url('/hero.webp')",
         backgroundPosition: "-180px center", // This moves the image further to the left
-      }} // ensure /public/hero.png exists
+      }}
     >
-      {/* Optional dark overlay for readability */}
-      {/* <div className="absolute inset-0 bg-black/40" /> */}
+      
 
       {/* Hero block */}
       <div className="relative h-screen flex flex-col items-center justify-center text-center px-6">
@@ -45,13 +44,13 @@ export default function Hero() {
           KIRAN KHAN
         </motion.h1>
         <motion.p
-          className="text-xl md:text-2xl font-normal xl:bottom-0 xl:absolute px-2 max-w-2xl"
+          className="text-xl md:text-2xl font-normal px-2 max-w-2xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.1 }}
         >
-          Head of department Textile Fashion & Accessories at <br />
+          Head of department Textile Fashion & Accessories <br />
           Beaconhouse National University (BNU) <br />
           An Interdisciplinary Fibre Artist <br />
           With an Experience of Over 30+ Years

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const page = async ({ params }) => {
@@ -196,10 +197,13 @@ const page = async ({ params }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {images.map((item, index) => (
               <div key={index} className="w-full">
-                <img
+            <Image
                   src={item.img}
                   alt={`Batch ${year} - Image ${index + 1}`}
+                  width={800}
+                  height={600}
                   className="w-full h-64 md:h-80 lg:h-96 object-cover shadow-lg"
+                  priority={index < 4} // preload first 2
                 />
               </div>
             ))}

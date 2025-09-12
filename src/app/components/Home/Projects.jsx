@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 
 const projects = [
-  { id: 1, title: "Project 1", img: "/project1.webp" },
-  { id: 2, title: "Project 2", img: "/project2.webp" },
-  { id: 3, title: "Project 3", img: "/profile.webp" },
-  { id: 4, title: "Project 4", img: "/project4.webp" },
-  { id: 5, title: "Project 5", img: "/project5.webp" },
-  { id: 6, title: "Project 6", img: "/project6.webp" },
-  { id: 7, title: "Project 7", img: "/project7.webp" },
-  { id: 8, title: "Project 8", img: "/project8.webp" },
+  { id: 1, title: "Jugaar", img: "/project1.webp" },
+  { id: 2, title: "Surangla Punjab", img: "/sp/sp2.webp" },
+  { id: 3, title: "Kiran Khan as Executive", img: "/profile.webp" },
+  { id: 4, title: "Liz Williamson", img: "/project4.webp" },
+  { id: 5, title: "Artpreneurial", img: "/ap/ap4.webp" },
+  { id: 6, title: "Islamic Art Festival", img: "/iaf/iaf1.webp" },
+  { id: 7, title: "Islamic Art Festival", img: "/iaf/iaf3.webp" },
+  { id: 8, title: "Retrospective", img: "/ret2.JPG" },
 ];
 
 export default function Projects() {
@@ -52,12 +52,12 @@ export default function Projects() {
                 loading="lazy"
                 src={project.img}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full grayscale-50 group-hover:grayscale-0 h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
               {/* Overlay */}
               <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-semibold">
+                <span className="text-white text-lg bg-black/50 p-2 font-semibold">
                   {project.title}
                 </span>
               </div>

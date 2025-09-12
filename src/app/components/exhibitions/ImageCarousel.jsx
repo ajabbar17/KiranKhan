@@ -112,7 +112,7 @@ export default function ImageCarousel({ images }) {
                 height={600}
                 src={image}
                 alt={`Image ${index + 1}`}
-                className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-fill rounded-lg"
+                className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[450px] object-fill rounded-lg"
               />
             </div>
           ))}

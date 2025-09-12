@@ -19,7 +19,7 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.1 }}
           >
-            DEATH OF BUTI
+            DEATH OF BOOTI
           </motion.h1>
         </div>
 

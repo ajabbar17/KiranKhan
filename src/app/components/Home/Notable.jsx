@@ -6,9 +6,9 @@ export default function Notable() {
   const projects = [
     {
       id: 1,
-      title: "Death of Buti",
+      title: "Death of Booti",
       img: "/dob.webp",
-      link: "/death-of-buti",
+      link: "/death-of-booti",
     },
     {
       id: 2,

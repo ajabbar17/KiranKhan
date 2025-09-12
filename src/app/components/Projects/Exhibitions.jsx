@@ -3,24 +3,44 @@ import React, { useState } from "react";
 
 const exhibitionsData = [
   {
-    title: "DS Opening",
+    title: "Design Summit Opening",
     images: ["/ds2.webp", "/ds.webp", "/ds1.webp"],
   },
   {
-    title: "KK as Executive",
+    title: "Kiran Khan as Executive",
     images: ["/profile.webp", "/kk.webp", "/kk1.webp"],
   },
   {
     title: "Jugaar",
     images: ["/jugaar.webp", "/jugaar1.webp", "/fan.webp"],
   },
+  {
+    title: "Simultaneity",
+    images: ["/sim/sim1.webp", "/sim/sim2.webp", "/sim/sim3.webp"],
+  },
+  {
+    title: "Pavillions Materiality",
+    images: ["/pm/pm1.webp", "/pm/pm2.webp", "/pm/pm3.webp"],
+  },
+  {
+    title: "Food As Design",
+    images: ["/fd/fd1.webp", "/fd/fd2.webp", "/fd/fd3.webp"],
+  },
+  {
+    title: "Performance As Design",
+    images: ["/pad1.JPG", "/pad2.JPG", "/pad3.JPG"],
+  },
+  {
+    title: "Designing Pakistan Day",
+    images: ["/dip1.JPG", "/dip2.JPG", "/dip3.JPG"],
+  },
 ];
 
 export default function Exhibitions() {
   return (
     <section className="relative bg-black text-white py-16 px-3">
-      <h2 className="text-[#F49440] text-center text-3xl md:text-5xl font-bold mb-12">
-        EXHIBITIONS
+      <h2 className="text-[#F49440] text-center text-3xl md:text-5xl font-bold mt-5 mb-12">
+        PROJECTS
       </h2>
       <h2 className="text-2xl flex flex-col items-center text-center mb-12  w-fit mx-auto pb-2">
         Design Summit
@@ -28,7 +48,7 @@ export default function Exhibitions() {
         className="w-[100px] mt-3 border  border-[#ffffffa7]"
         > </span>
       </h2>
-      <div className="relative w-full h-[180vh] xl:h-[300vh] max-w-5xl mx-auto">
+      <div className="relative w-full h-[500vh] xl:h-[700vh] max-w-5xl mx-auto">
         {exhibitionsData.map((exhibit, index) => (
           <ExhibitionCard key={index} exhibit={exhibit} index={index} />
         ))}

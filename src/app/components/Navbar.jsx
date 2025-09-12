@@ -32,16 +32,22 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/about"
+            href="/profile"
             className="text-white hover:text-orange-400 transition"
           >
-            About
+            Profile
           </Link>
           <Link
             href="/exhibitions"
             className="text-white hover:text-orange-400 transition"
           >
             Exhibitions
+          </Link>
+          <Link
+            href="/teaching-experience"
+            className="text-white hover:text-orange-400 transition"
+          >
+            Teaching Experience
           </Link>
 
           {/* Dropdown */}
@@ -62,10 +68,10 @@ export default function Navbar() {
                   Wemend Womenifesto
                 </Link>
                 <Link
-                  href="/death-of-buti"
+                  href="/death-of-booti"
                   className="block px-4 py-2 hover:bg-orange-500 transition"
                 >
-                  Death of Buti
+                  Death of Booti
                 </Link>
               </div>
             )}
@@ -124,11 +130,11 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="/profile"
                 className="text-white hover:text-orange-400 transition text-lg py-2 border-b border-white/10"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                About
+                Profile
               </Link>
               <Link
                 href="/exhibitions"
@@ -137,7 +143,12 @@ export default function Navbar() {
               >
                 Exhibitions
               </Link>
-
+              <Link
+                href="/teaching-experience"
+                className="text-white hover:text-orange-400 transition"
+              >
+                Teaching Experience
+              </Link>
 
               {/* Mobile Projects Dropdown */}
               <div className="space-y-3">
@@ -171,14 +182,14 @@ export default function Navbar() {
                       Wemend Womenifesto
                     </Link>
                     <Link
-                      href="/death-of-buti"
+                      href="/death-of-booti"
                       className="block text-white/80 hover:text-orange-400 transition py-1"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         setIsOpen(false);
                       }}
                     >
-                      Death of Buti
+                      Death of Booti
                     </Link>
                   </div>
                 </div>
