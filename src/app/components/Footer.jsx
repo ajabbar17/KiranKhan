@@ -112,7 +112,7 @@ const Footer = () => {
                   { href: "/profile", label: "Profile", desc: "My Journey & Vision" },
                   { href: "/exhibitions", label: "Exhibitions", desc: "Gallery & Shows" },
                   { href: "/death-of-booti", label: "Death of Booti", desc: "Featured Project" },
-                  { href: "/womenifesto", label: "Womanifesto", desc: "Empowerment Initiative" }
+                  { href: "/womanifesto", label: "Womanifesto", desc: "Empowerment Initiative" }
                 ].map((link, index) => (
                   <Link
                     key={index}
