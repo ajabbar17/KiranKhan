@@ -5,7 +5,7 @@ export default function Experience() {
   const experiences = [
     {
       title:
-        "Speaker at School of Education BNU,Seminar on inclusivity in Education by M.Phil programme SE",
+        "Speaker at School of Education BNU, Seminar on inclusivity in Education by M.Phil programme SE",
       date: "20th June 2025",
     },
     {
