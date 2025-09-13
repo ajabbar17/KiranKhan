@@ -16,7 +16,7 @@ const exhibitionsData = [
   },
   {
     title: "Simultaneity As Design",
-    images: ["/jugaar4.JPG", "/sim/sim2.webp", "/sim/sim3.webp"],
+    images: ["/jugaar4.jpg", "/sim/sim2.webp", "/sim/sim3.webp"],
   },
   {
     title: "Pavilions Materiality As Design",
@@ -108,7 +108,7 @@ function ExhibitionCard({ exhibit, index }) {
       className="sticky bg-black border border-[#7D1515] shadow-lg overflow-hidden mb-16"
       style={{
         // marginTop: index === 0 ? "50px" : `${50 + index * 10}px`,
-        top: `${50 + index * 35}px`,
+        top: `${50 + index * 25}px`,
       }} // stacked effect with consistent spacing
     >
       <h3 className="text-xl bg-[#7D1515]  font-semibold mb-4 px-6 py-2">
@@ -133,7 +133,7 @@ function ExhibitionCard({ exhibit, index }) {
               <img
                 src={img}
                 alt={`${exhibit.title} - Image ${i + 1}`}
-                className={`w-full h-48 md:h-[30vh] xl:h-[50vh] object-fill rounded-xl shadow-lg transition-all duration-500  ${
+                className={`w-full h-48 md:h-[30vh] xl:h-[55vh] object-fill rounded-xl shadow-lg transition-all duration-500  ${
                   i === current ? "opacity-100" : "opacity-60 hover:opacity-80"
                 }`}
               />

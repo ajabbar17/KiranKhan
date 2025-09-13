@@ -69,7 +69,7 @@ export default function ImageCarousel({ images }) {
   }
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6">
+    <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6">
       {/* Navigation Buttons - Hidden on mobile, visible on tablet+ */}
       <button
         onClick={prevSlide}
@@ -89,7 +89,7 @@ export default function ImageCarousel({ images }) {
 
       {/* Images Container */}
       <div
-        className="overflow-hidden rounded-lg"
+        className="overflow-hidden "
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -105,7 +105,7 @@ export default function ImageCarousel({ images }) {
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 px-1 sm:px-2 w-full sm:w-1/2"
+              className="flex-shrink-0 pr-1  w-full sm:w-1/2"
             >
               <Image
                 width={800}
