@@ -1,29 +1,11 @@
-import { Geist, Geist_Mono,Oswald,Aleo,Caladea } from "next/font/google";
+import { Caladea } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-  weight: ["200","300","400","500","600","700"]
-});
 
-const aleo = Aleo({
-  variable: "--font-aleo",
-  subsets: ["latin"],
-  weight: ["200","300","400","500","600","700","800","900"]
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const caladea = Caladea({
   variable: "--font-caladea",
@@ -41,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       suppressHydrationWarning={true}
-        className={`${geistSans.variable} ${caladea.variable} ${aleo.variable} ${oswald.variable} ${geistMono.variable} antialiased`}
+        className={` ${caladea.variable}  antialiased`}
       >
         <Navbar />
         {children}

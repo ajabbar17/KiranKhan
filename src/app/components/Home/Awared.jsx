@@ -9,7 +9,6 @@ export default function Awards() {
       date: "November 1996",
       text: "Sir Percy Brown Award for academic achievement in Art History, NCA, Lahore, Pakistan",
       img: "/profile.webp",
-      img2: "/awards1-2.png",
     },
     {
       id: 4,
@@ -78,26 +77,30 @@ export default function Awards() {
               exit={{ y: 80, opacity: 0 }}
               transition={{ duration: 0.6 }}
               className="flex justify-center relative"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseEnter={() => awardsData[index].img2 && setIsHovered(true)}
+              onMouseLeave={() => awardsData[index].img2 && setIsHovered(false)}
             >
               {/* Primary Image */}
               <motion.img
                 src={awardsData[index].img}
                 alt="Award"
                 className="shadow-lg w-full max-w-md object-cover"
-                animate={{ opacity: isHovered ? 0 : 1 }}
+                animate={{
+                  opacity: isHovered && awardsData[index].img2 ? 0 : 1,
+                }}
                 transition={{ duration: 0.3 }}
               />
 
-              {/* Hover Image */}
-              <motion.img
-                src={awardsData[index].img2}
-                alt="Award Hover"
-                className="shadow-lg w-full max-w-md object-cover absolute top-0 left-0"
-                animate={{ opacity: isHovered ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
-              />
+              {/* Hover Image - Only render if img2 exists */}
+              {awardsData[index].img2 && (
+                <motion.img
+                  src={awardsData[index].img2}
+                  alt="Award Hover"
+                  className="shadow-lg w-full max-w-md object-cover absolute top-0 left-0"
+                  animate={{ opacity: isHovered ? 1 : 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+              )}
             </motion.div>
           </AnimatePresence>
 
