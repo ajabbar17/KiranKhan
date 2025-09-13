@@ -12,9 +12,9 @@ export default function Notable() {
     },
     {
       id: 2,
-      title: "Womenifesto",
+      title: "Womanifesto",
       img: "/womenifesto.webp",
-      link: "/womenifesto",
+      link: "/womanifesto",
     },
   ];
 

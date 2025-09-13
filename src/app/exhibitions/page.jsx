@@ -36,42 +36,33 @@ const exhibitions = [
     description:
       "South Asian Textiles are celebrated as timeless symbols of beauty and craftsmanship, continuing to inspire those who touch, see, use, and wear them. This exhibition titled ‘Talaash-e-Kamaal: The Pursuit of Excellence Through The Threads of Time’ reflects on the discourse of textile practices under the Mughal Islamic period, seeking to augment our understanding of the historical context in which these textiles were produced and the wider meanings that they acquired as they were traded and consumed both within the subcontinent and beyond. This show seeks to offer a contemporary interpretation through scholarly research, personal reflection, and syncretism - mirroring the creative context and impulses that allowed for Indo-Mughal textiles to flourish globally.",
     images: [
-        "/iaf/iaf1.webp",
-        "/dob/1.webp",
-        "/iaf/iaf3.webp",
-        "/iaf/iaf4.webp",
-        "/iaf/iaf5.webp",
-    ]
+      "/iaf/iaf1.webp",
+      "/iaf5.jpeg",
+      "/iaf/iaf3.webp",
+      "/iaf/iaf4.webp",
+      "/iaf6.jpeg",
+      "/iaf/iaf5.webp",
+    ],
   },
   {
-    title: "Liz Williamson",
-    description:
-      `Liz Williamson Exhibition.
+    title: "Collaboration With Liz Williamson",
+    description: `Liz Williamson Exhibition.
 The Weaving Eucalyptus Project: A Global Textile Collaboration
 Kiran Khan collaborated with renowned fibre artist and weaver Liz Williamson on the Weaving Eucalyptus Project, a groundbreaking initiative exploring natural materials and sustainable textile practices. Kiran Khan's contribution involved dyeing pure fabrics organic cotton, raw silk, and satin using locally sourced eucalyptus leaves, twigs, and bark, commonly known as Safaida.
 Throughout the process, Kiran Khan meticulously documented the dyeing technique, resulting in unique fabrics that were sent to Liz to weave into panels. This global project united textile artists sharing an interest in the natural world, natural materials, and environmental concerns. The outcome was a stunning, globally-sourced woven fabric featuring eucalyptus-inspired pieces from around the world.
 Liz incorporated Kiran Khan's dyed fabrics into the project, assigning a QR code to each panel. This digital component provides insight into the collaborative process, materials, and contributors. The completed project comprises 100 panels, exhibited at UNSW Galleries from 18 June to 14 August 2022. The installation will tour regional Victorian and NSW galleries in 2023.
 The Weaving Eucalyptus Project celebrates international collaboration, sustainable practices, and the beauty of natural materials. By bringing together textile artists worldwide, this initiative acknowledges the importance of environmental awareness and artistic exchange.
 `,
-    images: [
-        "/project4.webp",
-        "/lw3.jpg"
-    ]
+    images: ["/project4.webp", "/lw3.jpg"],
   },
   {
     title: "Sharjah Bienale",
-    description: `Sharjah Biennale 15: Thinking Historically in the Present
-Curated by Kiran Khan, the exhibition showcased a diverse range of contemporary art practices from South Asia, the Middle East, and North Africa. The exhibition featured works by over 50 artists, including installations, sculptures, paintings, and videos. 
-The exhibition explored themes such as identity, memory, migration, and the relationship between tradition and modernity. It also highlighted the ways in which artists from these regions are engaging with global issues and contributing to contemporary art discourse.
-Overall, Sharjah Biennale 15 was a significant event in the contemporary art world, providing a platform for artists from underrepresented regions to showcase their work and engage with a global audience. The exhibition received critical acclaim for its innovative curatorial approach and the quality of the artworks on display.
-`,
+    description: `Sharjah Biennale
+Prof. Kiran Khan, Project lead  of WeMend, core contributor and TFA’s HOD visited the project at Sharjah Biennale’s 16th edition “To Carry”, housed in the iconic landmark Flying Saucer site in Sharjah, UAE. She was accompanied by TFA faculty member and WeMend contributing artist Qurratulain Sonia Kashmiri, who contributed “LALACH/لالچ”, a series of textile artworks made in collaboration with artisans of Baazyaft.
+Sharjah Biennale 16th Edition (2025): To Carry
+Organised by the Sharjah Art Foundation, and curated by Alia Swastika, Amal Khalaf, Megan Tamati-Quennell, Natasha Ginwala and Zeynep Öz, Sharjah Biennial 16 featured works by more than 190 participants, including over 200 new commissions, which were presented across the Emirate of Sharjah.`,
 
-    images: [
-        "/sb1.png",
-        "/sb2.png",
-        "/sb3.png",
-    ] 
-
+    images: ["/sb1.png", "/sb4.jpeg", "/sb3.png"],
   },
   // {
   //   title: "Food As Design",
@@ -91,9 +82,9 @@ Overall, Sharjah Biennale 15 was a significant event in the contemporary art wor
   //   pdfLink: "/pdf/jugaar.pdf",
   //   images: [
   //       "/jugaar1.webp",
-  //       "/jugaar2.webp", 
-  //       "/jugaar3.webp", 
-  //       "/jugaar4.webp", 
+  //       "/jugaar2.webp",
+  //       "/jugaar3.webp",
+  //       "/jugaar4.webp",
 
   //   ]
   // },
@@ -104,10 +95,9 @@ Overall, Sharjah Biennale 15 was a significant event in the contemporary art wor
   //   pdfLink: "/pdf/jugaar.pdf",
   //   images: [
   //       "/pm/pm1.webp",
-  //       "/pm/pm2.webp", 
+  //       "/pm/pm2.webp",
   //       "/pm/pm3.webp",
   //       "/pm/pm4.webp",
-        
 
   //   ]
   // },
@@ -123,28 +113,24 @@ Overall, Sharjah Biennale 15 was a significant event in the contemporary art wor
   //       "/sim/sim4.webp",
   //    ]
 
-    
   // },
-
-
 ];
 
-
 const retrospective = {
-  title: "Retrospective",
-  description:"Retrospective: Fibre and Textile Expression” at Articulate Studios, Lahore, showcased works by 21 graduates of BNU’s Textile, Fashion, and Accessory program, celebrating 20 years of the department. Curated by Kiran Khan, Faseeh Saleem, and Eisha Liaqat, the exhibition highlighted how fibre and textile extend beyond craft into powerful forms of contemporary art. From Fahad Hussayn’s sculptural garments and Faseeh Saleem’s visceral video works to poignant installations by Aiman Gillani, Rafia Shafiq, and Anam Khurram, the show explored themes of memory, identity, trauma, and cultural history. The diverse works reaffirmed textile as a dynamic medium that bridges tradition and innovation.",
-  images: [
-    "/ret2.JPG",
-    "/ret1.JPG",
-    "/ret3.webp",],
+  title: "Retrospective Textile and Fibre Expressions",
+  description:
+    "Retrospective: Fibre and Textile Expression” at Articulate Studios, Lahore, showcased works by 21 graduates of BNU’s Textile, Fashion, and Accessory program, celebrating 20 years of the department. Curated by Kiran Khan, Faseeh Saleem, and Eisha Liaqat, the exhibition highlighted how fibre and textile extend beyond craft into powerful forms of contemporary art. From Fahad Hussayn’s sculptural garments and Faseeh Saleem’s visceral video works to poignant installations by Aiman Gillani, Rafia Shafiq, and Anam Khurram, the show explored themes of memory, identity, trauma, and cultural history. The diverse works reaffirmed textile as a dynamic medium that bridges tradition and innovation.",
+  images: ["/ret2.JPG", "/ret1.JPG", "/ret3.webp"],
   pdfLink: "/pdf/retrospective.pdf",
   videosrc: "/retrospective.mp4",
-}
+};
 
 const page = () => {
- return (
+  return (
     <section className="py-16 bg-black text-white">
-        <h1 className="md:text-6xl text-3xl text-center heading font-bold mb-7 mt-4">EXHIBITIONS</h1>
+      <h1 className="md:text-6xl text-3xl text-center heading font-bold mb-7 mt-4">
+        EXHIBITIONS
+      </h1>
       {exhibitions.map((exhibit, index) => (
         <div key={index} className="mb-16">
           <ExhibitionContent
@@ -157,7 +143,11 @@ const page = () => {
       ))}
 
       <div>
-        <ExhibitionContent title={retrospective.title} description={retrospective.description} pdfLink={retrospective.pdfLink} />
+        <ExhibitionContent
+          title={retrospective.title}
+          description={retrospective.description}
+          pdfLink={retrospective.pdfLink}
+        />
         <ImageCarousel images={retrospective.images} />
         <div className="flex justify-center mt-8 px-3">
           <VideoPlayer
@@ -166,9 +156,8 @@ const page = () => {
           />
         </div>
       </div>
-
     </section>
   );
-}
+};
 
-export default page
+export default page;

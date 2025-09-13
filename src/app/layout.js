@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono,Oswald,Aleo } from "next/font/google";
+import { Geist, Geist_Mono,Oswald,Aleo,Caladea } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -25,6 +25,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const caladea = Caladea({
+  variable: "--font-caladea",
+  subsets: ["latin"],
+  weight: ["400","700"]
+});
+
 export const metadata = {
   title: "Kiran Khan",
   description: "Official Portfolio of Kiran Khan - Artist, Curator, Educator, and Researcher. Explore her diverse body of work, exhibitions, and projects that bridge art and activism.",
@@ -35,7 +41,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       suppressHydrationWarning={true}
-        className={`${geistSans.variable} ${aleo.variable} ${oswald.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${caladea.variable} ${aleo.variable} ${oswald.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
         {children}

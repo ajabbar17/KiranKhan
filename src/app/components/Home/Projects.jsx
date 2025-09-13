@@ -4,10 +4,10 @@ import React from "react";
 const projects = [
   { id: 1, title: "Jugaar", img: "/project1.webp" },
   { id: 2, title: "Surangla Punjab", img: "/sp/sp2.webp" },
-  { id: 3, title: "Kiran Khan as Executive", img: "/profile.webp" },
-  { id: 4, title: "Liz Williamson", img: "/project4.webp" },
+  { id: 3, title: "Kiran Khan as Executive Director", img: "/profile.webp" },
+  { id: 4, title: "Collboration With Liz Williamson", img: "/project4.webp" },
   { id: 5, title: "Artpreneurial", img: "/ap/ap4.webp" },
-  { id: 6, title: "Islamic Art Festival", img: "/iaf/iaf1.webp" },
+  { id: 6, title: "Death Of Booti", img: "/iaf/iaf1.webp" },
   { id: 7, title: "Islamic Art Festival", img: "/iaf/iaf3.webp" },
   { id: 8, title: "Retrospective", img: "/ret2.JPG" },
 ];
@@ -57,7 +57,7 @@ export default function Projects() {
 
               {/* Overlay */}
               <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <span className="text-white text-lg bg-black/50 p-2 font-semibold">
+                <span className="text-white text-sm bg-black/50 p-2 font-semibold">
                   {project.title}
                 </span>
               </div>

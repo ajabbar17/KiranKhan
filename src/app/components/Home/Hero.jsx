@@ -33,7 +33,7 @@ export default function Hero() {
       
 
       {/* Hero block */}
-      <div className="relative h-screen flex flex-col items-center justify-center text-center px-6">
+      <div className="relative heading h-screen flex flex-col items-center justify-center text-center px-6">
         <motion.h1
           className="text-4xl md:text-6xl mb-2 font-bold"
           initial={{ opacity: 0}}
@@ -44,7 +44,7 @@ export default function Hero() {
           KIRAN KHAN
         </motion.h1>
         <motion.p
-          className="text-xl md:text-2xl font-normal px-2 max-w-2xl"
+          className="text-xl text-white md:text-2xl font-normal px-2 max-w-2xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}

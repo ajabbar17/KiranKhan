@@ -3,24 +3,24 @@ import React, { useState } from "react";
 
 const exhibitionsData = [
   {
+    title: "Kiran Khan as Executive Director",
+    images: ["/profile.webp", "/kk.webp", "/kk1.webp"],
+  },
+  {
     title: "Design Summit Opening",
     images: ["/ds2.webp", "/ds.webp", "/ds1.webp"],
   },
   {
-    title: "Kiran Khan as Executive",
-    images: ["/profile.webp", "/kk.webp", "/kk1.webp"],
+    title: "Jugaar As Design",
+    images: ["/jugaar.webp", "/fan.webp", "jugaar3.JPG"],
   },
   {
-    title: "Jugaar",
-    images: ["/jugaar.webp", "/jugaar1.webp", "/fan.webp"],
+    title: "Simultaneity As Design",
+    images: ["/jugaar4.JPG", "/sim/sim2.webp", "/sim/sim3.webp"],
   },
   {
-    title: "Simultaneity",
-    images: ["/sim/sim1.webp", "/sim/sim2.webp", "/sim/sim3.webp"],
-  },
-  {
-    title: "Pavillions Materiality",
-    images: ["/pm/pm1.webp", "/pm/pm2.webp", "/pm/pm3.webp"],
+    title: "Pavilions Materiality As Design",
+    images: ["/pm4.JPG", "/pm/pm2.webp", "/pm5.JPG"],
   },
   {
     title: "Food As Design",
@@ -31,7 +31,7 @@ const exhibitionsData = [
     images: ["/pad1.JPG", "/pad2.JPG", "/pad3.JPG"],
   },
   {
-    title: "Designing Pakistan Day",
+    title: "Designing Pakistan",
     images: ["/dip1.JPG", "/dip2.JPG", "/dip3.JPG"],
   },
 ];
@@ -44,9 +44,7 @@ export default function Exhibitions() {
       </h2>
       <h2 className="text-2xl flex flex-col items-center text-center mb-12  w-fit mx-auto pb-2">
         Design Summit
-        <span
-        className="w-[100px] mt-3 border  border-[#ffffffa7]"
-        > </span>
+        <span className="w-[100px] mt-3 border  border-[#ffffffa7]"> </span>
       </h2>
       <div className="relative w-full h-[500vh] xl:h-[700vh] max-w-5xl mx-auto">
         {exhibitionsData.map((exhibit, index) => (
@@ -125,15 +123,17 @@ function ExhibitionCard({ exhibit, index }) {
               key={i}
               className={`absolute transition-all duration-500 cursor-pointer ${
                 i === current
-                  ? "scale-110 z-10 w-[60%] xl:w-1/2"
+                  ? "scale-110 z-10 w-[60%] xl:w-[40%]"
                   : "scale-75 z-0 w-[30%] xl:w-1/3"
-              } ${getImagePositioning(i, current, exhibit.images.length)}`}
+              }
+             
+              ${getImagePositioning(i, current, exhibit.images.length)}`}
               onClick={() => setCurrent(i)}
             >
               <img
                 src={img}
                 alt={`${exhibit.title} - Image ${i + 1}`}
-                className={`w-full h-48 md:h-[30vh]  xl:h-[50vh] object-fill rounded-xl shadow-lg transition-all duration-500 ${
+                className={`w-full h-48 md:h-[30vh] xl:h-[50vh] object-fill rounded-xl shadow-lg transition-all duration-500  ${
                   i === current ? "opacity-100" : "opacity-60 hover:opacity-80"
                 }`}
               />

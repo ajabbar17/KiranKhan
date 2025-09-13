@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-6">
                 <div className="relative">
-                  <h3 className="text-5xl lg:text-6xl font-black bg-white bg-clip-text text-transparent animate-gradient bg-300% leading-tight">
+                  <h3 className="text-5xl  heading font-bold bg-white bg-clip-text text-transparent animate-gradient bg-300% leading-tight">
                     KIRAN KHAN
                   </h3>
                   {/* Glowing underline effect */}
@@ -55,7 +55,7 @@ const Footer = () => {
                 
                 <div className="space-y-1">
                   <p className=" text-xs uppercase tracking-[0.2em] font-medium text-[#F49440]">
-                    Interdisciplinary Fiber Artist
+                    Interdisciplinary Fibre Artist
                   </p>
                   <p className="text-gray-400 text-xs uppercase tracking-[0.15em]">
                     30+ Years of Creative Excellence
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
               
               <p className="text-gray-300 leading-relaxed text-xl font-light max-w-lg">
-                Head of department Textile Fashion & Accessories at Beaconhouse
+                Head of department Textile Fashion & Accessories <br /> Beaconhouse
                 National University (BNU). Transforming traditional crafts into contemporary art forms.
               </p>
               

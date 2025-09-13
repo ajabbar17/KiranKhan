@@ -11,7 +11,7 @@ export default function ExhibitionContent({ title, description, pdfLink }) {
           download
           className="text-orange-400 hover:underline"
         >
-          Read more …
+          Download Publication
         </a>
       )}
     </div>

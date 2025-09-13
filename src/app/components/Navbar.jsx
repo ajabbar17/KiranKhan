@@ -62,11 +62,11 @@ export default function Navbar() {
             {isOpen && (
               <div className="absolute top-10 left-0 bg-black/80 text-white rounded-lg shadow-lg w-60 border border-white/20">
                 <Link
-                  href="/womenifesto"
+                  href="/womanifesto"
                   onClick={() => setIsOpen(!isOpen)}
                   className="block px-4 py-2 hover:bg-orange-500 transition"
                 >
-                  Wemend Womenifesto
+                  WeMend Womanifesto
                 </Link>
                 <Link
                   href="/death-of-booti"
@@ -174,14 +174,14 @@ export default function Navbar() {
                 >
                   <div className="pl-4 space-y-3">
                     <Link
-                      href="/womenifesto"
+                      href="/womanifesto"
                       className="block text-white/80 hover:text-orange-400 transition py-1"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         setIsOpen(false);
                       }}
                     >
-                      Wemend Womenifesto
+                      WeMend Womanifesto
                     </Link>
                     <Link
                       href="/death-of-booti"

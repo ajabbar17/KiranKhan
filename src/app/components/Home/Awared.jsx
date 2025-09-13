@@ -6,24 +6,31 @@ export default function Awards() {
   const awardsData = [
     {
       id: 1,
-      date: "December 2015",
-      text: "Awarded Gold Medal for overall outstanding CGPA, M.Sc. Linguistics 2012–2014, BNU, Lahore.",
+      date: "November 1996",
+      text: "Sir Percy Brown Award for academic achievement in Art History, NCA, Lahore, Pakistan",
+      img: "/profile.webp",
+      img2: "/awards1-2.png",
+    },
+    {
+      id: 4,
+      date: "December 2023",
+      text: "Excellence in Service award on the 20th anniversary of BNU,",
       img: "/awards1.webp",
       img2: "/awards1-2.png",
     },
     {
       id: 2,
-      date: "March 2018",
-      text: "Recognized for Excellence in Textile Research and Creative Practice at National Level.",
+      date: "November 2024",
+      text: "Certificate of recognition Lahore Biennale 3rd Edition.",
       img: "/awards2.webp",
       img2: "/awards2-2.png",
     },
     {
       id: 3,
-      date: "July 2020",
-      text: "Honored with Lifetime Achievement Award in Fiber Arts and Teaching.",
+      date: "December 2014",
+      text: "Awarded Gold Medal for overall outstanding CGPA, M.Sc. Linguistics 2012-2014, BNU, Lahore. Valedictorian, batch 2012-2014",
       img: "/awards3.webp",
-      img2: "/awards3-2.png",
+      img2: "/awards1-2.png",
     },
   ];
 
