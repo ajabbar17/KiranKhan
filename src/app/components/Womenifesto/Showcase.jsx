@@ -24,7 +24,7 @@ const Showcase = () => {
       <div className="max-w-6xl mx-auto">
      
         {/* Grid Layout - 2 items per row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {data.map((batch,index) => (
             <div key={index} className="group">
              

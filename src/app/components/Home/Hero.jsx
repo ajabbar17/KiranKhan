@@ -59,7 +59,7 @@ export default function Hero() {
 
       {/* Profile block (same section / same background) */}
       <div className="relative text-center xl:text-left px-6 xl:py-16">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10">
           <motion.h2
             className="text-3xl font-bold mb-6 uppercase text-[#FFD400]"
             initial={{ opacity: 0, x: -30 }}
@@ -70,7 +70,7 @@ export default function Hero() {
             Profile
           </motion.h2>
         </div>
-        <div className="max-w-5xl  mx-auto grid md:grid-cols-2 gap-10 items-center justify-items-center text-center">
+        <div className="max-w-5xl  mx-auto grid lg:grid-cols-2 gap-10 items-center justify-items-center text-center">
           {/* Left column */}
           <div className=" xl:text-left text-lg mb-auto font-medium">
             <motion.p

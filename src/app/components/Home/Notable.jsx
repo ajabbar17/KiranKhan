@@ -27,7 +27,7 @@ export default function Notable() {
         </h2>
 
         {/* Images Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project) => (
             <Link key={project.id} href={project.link}>
               <div className="group relative overflow-hidden cursor-pointer">

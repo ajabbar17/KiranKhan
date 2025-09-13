@@ -31,7 +31,7 @@ const Teaching = () => {
         </h1>
 
         {/* Grid Layout - 2 items per row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
           {data.map((batch) => (
             <div key={batch.id} className="group">
               {batch.link ? (

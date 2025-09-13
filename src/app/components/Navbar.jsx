@@ -13,7 +13,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden absolute top-8 left-6 text-white hover:text-orange-400 transition"
+          className="lg:hidden absolute top-8 left-6 text-white hover:text-orange-400 transition"
         >
           {isMobileMenuOpen ? (
             <X size={24} />
@@ -23,7 +23,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Center Nav */}
-        <div className="hidden md:flex space-x-8 border bg-black/30 backdrop-blur-2xl border-white/20 rounded-full px-6 py-3">
+        <div className="hidden lg:flex space-x-8 border bg-black/30 backdrop-blur-2xl border-white/20 rounded-full px-6 py-3">
           <Link
             href="/"
             className="text-white hover:text-orange-400 transition"
@@ -85,7 +85,7 @@ export default function Navbar() {
           href="https://tanka.example.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex absolute right-6 items-center px-4 py-2 border border-white text-white rounded-full overflow-hidden group transition-all duration-300 hover:text-black"
+          className="hidden lg:flex absolute right-6 items-center px-4 py-2 border border-white text-white rounded-full overflow-hidden group transition-all duration-300 hover:text-black"
         >
           {/* Bottom-up white fill background */}
           <span className="absolute inset-0 bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></span>
@@ -106,7 +106,7 @@ export default function Navbar() {
 
         {/* Mobile Sidebar */}
         <div
-          className={`md:hidden fixed top-0 left-0 h-full w-80 bg-black/95 backdrop-blur-md border-r border-white/20 z-50 transform transition-transform duration-300 ease-in-out ${
+          className={`lg:hidden fixed top-0 left-0 h-full w-80 bg-black/95 backdrop-blur-md border-r border-white/20 z-50 transform transition-transform duration-300 ease-in-out ${
             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -147,7 +147,8 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/teaching-experience"
-                className="text-white hover:text-orange-400 transition"
+                className="text-white hover:text-orange-400 transition text-lg py-2 border-b border-white/10"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Teaching Experience
               </Link>

@@ -14,7 +14,7 @@ export default function ImageCarousel({ images }) {
     setIsHydrated(true);
 
     const checkScreenSize = () => {
-      const mobile = window.innerWidth < 768;
+      const mobile = window.innerWidth < 1280;
       setIsMobile(mobile);
       setImagesPerView(mobile ? 1 : 2);
       setCurrent(0); // Reset position when screen size changes
@@ -105,7 +105,7 @@ export default function ImageCarousel({ images }) {
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 pr-1  w-full sm:w-1/2"
+              className="flex-shrink-0 pr-1  w-full xl:w-1/2"
             >
               <Image
                 width={800}
