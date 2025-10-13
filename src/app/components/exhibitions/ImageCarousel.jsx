@@ -112,7 +112,7 @@ export default function ImageCarousel({ images }) {
                 height={600}
                 src={image}
                 alt={`Image ${index + 1}`}
-                className="w-full h-64 md:h-[70vh] object-cover "
+                className="w-full h-64 md:h-[74vh] object-fill "
               />
             </div>
           ))}

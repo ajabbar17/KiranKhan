@@ -62,7 +62,7 @@ Prof. Kiran Khan, Project lead  of WeMend, core contributor and TFA’s HOD visi
 Sharjah Biennale 16th Edition (2025): To Carry
 Organised by the Sharjah Art Foundation, and curated by Alia Swastika, Amal Khalaf, Megan Tamati-Quennell, Natasha Ginwala and Zeynep Öz, Sharjah Biennial 16 featured works by more than 190 participants, including over 200 new commissions, which were presented across the Emirate of Sharjah.`,
 
-    images: ["/sb1.png", "/sb4.jpeg", "/sb3.png"],
+    images: ["/sb1.png", "/sb4.jpeg", "/sb3.png","/sb4.JPG","/sb5.JPG","/sb6.JPG"],
   },
   // {
   //   title: "Food As Design",
@@ -120,7 +120,7 @@ const retrospective = {
   title: "Retrospective Textile and Fibre Expressions",
   description:
     "Retrospective: Fibre and Textile Expression” at Articulate Studios, Lahore, showcased works by 21 graduates of BNU’s Textile, Fashion, and Accessory program, celebrating 20 years of the department. Curated by Kiran Khan, Faseeh Saleem, and Eisha Liaqat, the exhibition highlighted how fibre and textile extend beyond craft into powerful forms of contemporary art. From Fahad Hussayn’s sculptural garments and Faseeh Saleem’s visceral video works to poignant installations by Aiman Gillani, Rafia Shafiq, and Anam Khurram, the show explored themes of memory, identity, trauma, and cultural history. The diverse works reaffirmed textile as a dynamic medium that bridges tradition and innovation.",
-  images: ["/ret2.JPG", "/ret1.JPG", "/ret3.webp"],
+  images: ["/ret2.JPG", "/ret1.JPG", "/ret3.webp","/ret5.JPG","/ret6.JPG","/ret7.JPG"],
   pdfLink: "/pdf/retrospective.pdf",
   videosrc: "/retrospective.mp4",
 };

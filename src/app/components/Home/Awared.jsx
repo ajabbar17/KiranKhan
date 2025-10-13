@@ -8,7 +8,21 @@ export default function Awards() {
       id: 1,
       date: "November 1996",
       text: "Sir Percy Brown Award for academic achievement in Art History, NCA, Lahore, Pakistan",
-      img: "/profile.webp",
+      img: "/percy.jpg",
+    },
+    {
+      id: 3,
+      date: "December 2014",
+      text: "Awarded Gold Medal for overall outstanding CGPA, M.Sc. Linguistics 2012-2014, BNU, Lahore. Valedictorian, batch 2012-2014",
+      img: "/awards3.webp",
+      img2: "/awards1-2.png",
+    },
+    {
+      id: 6,
+      date: "December 2014",
+      text: "Awarded Gold Medal for overall outstanding CGPA, M.Sc. Linguistics 2012-2014, BNU, Lahore. Valedictorian, batch 2012-2014",
+      img: "/degree.jpg",
+      img2: "/degree.jpg",
     },
     {
       id: 4,
@@ -23,13 +37,6 @@ export default function Awards() {
       text: "Certificate of recognition Lahore Biennale 3rd Edition.",
       img: "/awards2.webp",
       img2: "/awards2-2.png",
-    },
-    {
-      id: 3,
-      date: "December 2014",
-      text: "Awarded Gold Medal for overall outstanding CGPA, M.Sc. Linguistics 2012-2014, BNU, Lahore. Valedictorian, batch 2012-2014",
-      img: "/awards3.webp",
-      img2: "/awards1-2.png",
     },
   ];
 

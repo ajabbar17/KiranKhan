@@ -14,6 +14,9 @@ const Showcase = () => {
     {img: "/womenifesto/8.webp",},
     {img: "/womenifesto/9.webp",},
     {img: "/womenifesto/10.webp",},
+    {img: "/womenifesto/11.JPG",},
+    {img: "/womenifesto/12.JPG",},
+    {img: "/womenifesto/13.JPG",},
 
 
     
