@@ -62,7 +62,7 @@ Prof. Kiran Khan, Project lead  of WeMend, core contributor and TFA’s HOD visi
 Sharjah Biennale 16th Edition (2025): To Carry
 Organised by the Sharjah Art Foundation, and curated by Alia Swastika, Amal Khalaf, Megan Tamati-Quennell, Natasha Ginwala and Zeynep Öz, Sharjah Biennial 16 featured works by more than 190 participants, including over 200 new commissions, which were presented across the Emirate of Sharjah.`,
 
-    images: ["/sb1.png", "/sb4.jpeg", "/sb3.png","/sb4.JPG","/sb5.JPG","/sb6.JPG"],
+    images: ["/sb1.png", "/sb4.jpeg", "/sb3.png","/sb4.JPG","/sb5.jpg","/sb6.JPG"],
   },
   // {
   //   title: "Food As Design",

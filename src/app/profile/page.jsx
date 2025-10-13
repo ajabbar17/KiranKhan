@@ -17,7 +17,7 @@ const page = () => {
     {
       id: 2,
       title: "Art Address Artist In Residence",
-      images: ["/address1.JPG", "/address2.JPG", "/address3.JPG","/address4.JPG","/address5.JPG","/address6.JPG"],
+      images: ["/address1.jpg", "/address2.jpg", "/address3.jpg","/address4.jpg","/address5.JPG","/address6.jpg"],
     },
     {
       id: 3,

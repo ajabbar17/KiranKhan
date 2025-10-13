@@ -43,7 +43,7 @@ const page = async ({ params }) => {
       { img: "/fd/fd1.webp" },
       { img: "/fd/fd2.webp" },
       { img: "/fd/fd3.webp" },
-      { img: "/fd1.JPG" },
+      { img: "/fd1.jpg" },
       { img: "/fd2.JPG" },
       { img: "/fd3.JPG" },
       { img: "/fd4.JPG" },
