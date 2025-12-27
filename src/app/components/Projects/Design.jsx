@@ -17,26 +17,26 @@ const Design = () => {
 
   return (
     <section className="bg-black text-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         {/* Main Title */}
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 mt-2 text-[#F49440] uppercase">
           Design Summit
         </h1>
 
         {/* Grid Layout - 2 items per row */}
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-8">
           {data.map((batch) => (
             <div key={batch.id} className="group">
               {batch.link ? (
                 <Link href={batch.link} className="block">
-                  <div className="relative overflow-hidden  shadow-lg transition-transform duration-300 group-hover:scale-105">
+                  <div className="relative overflow-hidden   shadow-lg transition-transform duration-300 group-hover:scale-105">
                     <Image
                       width={800}
                       height={600}
                       loading="lazy"
                       src={batch.img}
                       alt={batch.title}
-                      className="w-full h-64 md:h-[77vh] object-fill transition-transform duration-300 group-hover:scale-110"
+                      className="w-full h-64 md:h-[65vh] object-fill transition-transform duration-300 group-hover:scale-110"
                     />
                     {/* Overlay on hover */}
                   </div>

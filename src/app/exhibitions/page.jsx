@@ -56,7 +56,7 @@ The Weaving Eucalyptus Project celebrates international collaboration, sustainab
     images: ["/project4.webp", "/lw3.jpg"],
   },
   {
-    title: "Sharjah Bienale",
+    title: "Sharjah Biennale",
     description: `Sharjah Biennale
 Prof. Kiran Khan, Project lead  of WeMend, core contributor and TFA’s HOD visited the project at Sharjah Biennale’s 16th edition “To Carry”, housed in the iconic landmark Flying Saucer site in Sharjah, UAE. She was accompanied by TFA faculty member and WeMend contributing artist Qurratulain Sonia Kashmiri, who contributed “LALACH/لالچ”, a series of textile artworks made in collaboration with artisans of Baazyaft.
 Sharjah Biennale 16th Edition (2025): To Carry

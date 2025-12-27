@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -8,7 +8,9 @@ export default function ImageCarousel({ images }) {
   const [imagesPerView, setImagesPerView] = useState(1);
   const [isMobile, setIsMobile] = useState(true); // Default to mobile to prevent flash
   const [isHydrated, setIsHydrated] = useState(false);
-
+  const [translateX, setTranslateX] = useState(0);
+  const imageRefs = useRef([]);
+  const [imageslength, setImagesLength] = useState(images.length);
   useEffect(() => {
     // Set hydrated flag
     setIsHydrated(true);
@@ -18,6 +20,7 @@ export default function ImageCarousel({ images }) {
       setIsMobile(mobile);
       setImagesPerView(mobile ? 1 : 2);
       setCurrent(0); // Reset position when screen size changes
+      setTranslateX(0); // Reset translate when screen size changes
     };
 
     checkScreenSize();
@@ -25,14 +28,31 @@ export default function ImageCarousel({ images }) {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const maxIndex = Math.max(0, images.length - imagesPerView);
+  // Calculate translate based on image widths
+  useEffect(() => {
+    const calculateTranslate = () => {
+      let totalWidth = 0;
+      for (let i = 0; i < current; i++) {
+        if (imageRefs.current[i]) {
+          totalWidth += imageRefs.current[i].offsetWidth;
+        }
+      }
+      setTranslateX(totalWidth);
+    };
+
+    // Small delay to ensure images are rendered and have proper dimensions
+    const timer = setTimeout(calculateTranslate, 0);
+    return () => clearTimeout(timer);
+  }, [current, imagesPerView]);
+
+  const maxIndex = images.length - 1;
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev === 0 ? maxIndex : prev - imagesPerView));
+    setCurrent((prev) => (prev === 0 ? maxIndex : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev >= maxIndex ? 0 : prev + imagesPerView));
+    setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
   };
 
   // Touch/swipe functionality
@@ -56,10 +76,10 @@ export default function ImageCarousel({ images }) {
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
 
-    if (isLeftSwipe && current < maxIndex) {
+    if (isLeftSwipe) {
       nextSlide();
     }
-    if (isRightSwipe && current > 0) {
+    if (isRightSwipe) {
       prevSlide();
     }
   };
@@ -97,22 +117,25 @@ export default function ImageCarousel({ images }) {
         <div
           className="flex transition-transform duration-300 ease-out will-change-transform"
           style={{
-            transform: `translate3d(-${
-              current * (100 / imagesPerView)
-            }%, 0, 0)`,
+            transform: `translate3d(-${translateX}px, 0, 0)`,
           }}
         >
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 pr-1  w-full xl:w-1/2"
+              ref={(el) => (imageRefs.current[index] = el)}
+              className={`flex-shrink-0 pr-1  w-full
+                  ${imageslength == 2 ? "xl:w-1/2" : "xl:w-auto"}
+                `}
             >
               <Image
                 width={800}
                 height={600}
                 src={image}
                 alt={`Image ${index + 1}`}
-                className="w-full h-64 md:h-[74vh] object-fill "
+                className={`w-full h-64 md:h-[74vh] object-fill
+                    ${imageslength == 2 ? "xl:w-full" : "xl:w-auto"}
+                  `}
               />
             </div>
           ))}
@@ -121,19 +144,17 @@ export default function ImageCarousel({ images }) {
 
       {/* Dots Indicator */}
       <div className="flex justify-center mt-4 sm:mt-6 space-x-2">
-        {Array.from({ length: Math.ceil(images.length / imagesPerView) }).map(
-          (_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrent(index * imagesPerView)}
-              className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors duration-200 ${
-                Math.floor(current / imagesPerView) === index
-                  ? "bg-[#F49440]"
-                  : "bg-gray-400 hover:bg-gray-500"
-              }`}
-            />
-          )
-        )}
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors duration-200 ${
+              current === index
+                ? "bg-[#F49440]"
+                : "bg-gray-400 hover:bg-gray-500"
+            }`}
+          />
+        ))}
       </div>
 
       {/* Mobile Navigation Hint */}
