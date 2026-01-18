@@ -4,42 +4,42 @@ import Image from "next/image";
 
 const Showcase = () => {
   const data = [
-   {img: "/dob/1.webp",},
-    {img: "/dob/2.webp",},
-    {img: "/dob/3.webp",},
-    {img: "/dob/4.webp",},
-    {img: "/dob/5.webp",},
-    {img: "/dob/6.webp",},
-    {img: "/dob/7.webp",},
-    {img: "/dob/8.webp",},
-    {img: "/dob/9.webp",},
-    {img: "/dob/10.webp",},
-
-
-    
+    { img: "/dob/1.webp" },
+    { img: "/dob/2.webp" },
+    { img: "/dob/3.webp" },
+    { img: "/dob/4.webp" },
+    { img: "/dob/5.webp" },
+    { img: "/dob/6.webp" },
+    { img: "/dob/7.webp" },
+    { img: "/dob/8.webp" },
+    { img: "/dob/9.webp" },
+    { img: "/dob/13.JPG" },
+    { img: "/dob/14.JPG" },
+    { img: "/dob/15.JPG" },
+    { img: "/dob/16.JPG" },
+    { img: "/dob/17.JPG" },
+    { img: "/dob/18.JPG" },
+    { img: "/dob/19.JPG" },
   ];
 
   return (
     <section className="bg-black text-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
-     
         {/* Grid Layout - 2 items per row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          {data.map((batch,index) => (
+          {data.map((batch, index) => (
             <div key={index} className="group">
-             
-                <div className="block cursor-default">
-                  <div className="relative overflow-hidden shadow-lg">
-                    <Image
-                      width={800}
-                      height={600}
-                      src={batch.img}
-                      alt={batch.img}
-                      className="w-full h-64 md:h-[70vh] object-cover opacity-70"
-                    />
-                  </div>
-                  
+              <div className="block cursor-default">
+                <div className="relative overflow-hidden shadow-lg">
+                  <Image
+                    width={800}
+                    height={600}
+                    src={batch.img}
+                    alt={batch.img}
+                    className="w-full h-64 md:h-[78vh] object-cover opacity-70"
+                  />
                 </div>
+              </div>
             </div>
           ))}
         </div>
