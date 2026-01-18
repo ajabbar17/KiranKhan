@@ -150,9 +150,7 @@ const Footer = () => {
               </div>
 
               <div className="space-y-8">
-                <p className="text-gray-300 text-lg font-light leading-relaxed">
-                  Ready to collaborate on something extraordinary? Let's bring your vision to life.
-                </p>
+                
 
                 {/* Premium social icons */}
                 <div className="grid grid-cols-3 gap-4">

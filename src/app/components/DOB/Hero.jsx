@@ -58,7 +58,9 @@ const Hero = () => {
             through Mughal patronage, political upheavals, and its eventual
             decline with the rise of the Jacquard loom. In doing so, her work
             revives narratives of resilience, history, and cultural memory
-            embedded in textiles.
+            embedded in textiles. This work was displayed at Talaash e Kamaal,
+            Islamic Arts Festival Lahore February 2025, and NCA Trienalle
+            October 2025.
           </motion.p>
         </motion.div>
       </div>

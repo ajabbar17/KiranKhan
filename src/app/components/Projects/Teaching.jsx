@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Teaching = () => {
   const data = [
-    { id: 1, title: "Batch 2025", img: "/batch25.webp", link: "/batch/2025" },
-    { id: 2, title: "Batch 2024", img: "/batch24.webp", link: "/batch/2024" },
+    { id: 1, title: "Batch 2025", img: "/batch25/16.webp", link: "/batch/2025" },
+    { id: 2, title: "Batch 2024", img: "/batch24/1.webp", link: "/batch/2024" },
     { id: 3, title: "Batch 2023", img: "/batch23.webp", link: "/batch/2023" },
     { id: 4, title: "Batch 2022", img: "/batch22.webp", link: "/batch/2022" },
     { id: 5, title: "Batch 2021", img: "/batch21/2.webp", link: "/batch/2021" },

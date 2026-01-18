@@ -32,6 +32,13 @@ export default function Awards() {
       img2: "/awards1-2.png",
     },
     {
+      id: 5,
+      date: "December 2023",
+      text: "BNU Excellence Award, Alumni Category School of Education, BNU",
+      img: "/BNUexcellence.jpeg",
+      img2: "/BNUexcellence.jpeg",
+    },
+    {
       id: 2,
       date: "November 2024",
       text: "Certificate of recognition Lahore Biennale 3rd Edition.",
