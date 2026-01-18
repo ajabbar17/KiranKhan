@@ -19,7 +19,7 @@ const Showcase = () => {
     { img: "/dob/16.JPG" },
     { img: "/dob/17.JPG" },
     { img: "/dob/18.JPG" },
-    { img: "/dob/19.JPG" },
+    { img: "/dob/19.jpg" },
   ];
 
   return (
