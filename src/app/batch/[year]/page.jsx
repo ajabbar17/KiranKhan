@@ -11,7 +11,7 @@ const page = async ({ params }) => {
       { img: "/batch25/17.webp" },
       { img: "/batch25/18.webp" },
       { img: "/batch25/19.webp" },
-      { img: "/batch25/20.jpg" },
+      { img: "/batch25/20.JPG" },
     ],
     2024: [
       { img: "/batch24/3.webp" },
