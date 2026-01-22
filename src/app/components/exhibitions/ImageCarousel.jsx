@@ -125,7 +125,7 @@ export default function ImageCarousel({ images }) {
               key={index}
               ref={(el) => (imageRefs.current[index] = el)}
               className={`flex-shrink-0 pr-1  w-full
-                  ${imageslength == 2 ? "xl:w-1/2" : "xl:w-auto"}
+                  ${imageslength == 2 ? "xl:w-auto" : "xl:w-auto"}
                 `}
             >
               <Image

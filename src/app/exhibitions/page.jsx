@@ -42,6 +42,7 @@ const exhibitions = [
       "/iaf/iaf4.webp",
       "/iaf6.jpeg",
       "/iaf/iaf5.webp",
+      "/iaf/iaf6.jpg",
     ],
   },
   {
@@ -62,7 +63,74 @@ Prof. Kiran Khan, Project lead  of WeMend, core contributor and TFA’s HOD visi
 Sharjah Biennale 16th Edition (2025): To Carry
 Organised by the Sharjah Art Foundation, and curated by Alia Swastika, Amal Khalaf, Megan Tamati-Quennell, Natasha Ginwala and Zeynep Öz, Sharjah Biennial 16 featured works by more than 190 participants, including over 200 new commissions, which were presented across the Emirate of Sharjah.`,
 
-    images: ["/sb1.png", "/sb4.jpeg", "/sb3.png","/sb4.JPG","/sb5.jpg","/sb6.JPG"],
+    images: [
+      "/sb1.png",
+      "/sb4.jpeg",
+      "/sb3.png",
+      "/sb4.JPG",
+      "/sb5.jpg",
+      "/sb6.JPG",
+      "/sb7.jpg",
+    ],
+  },
+  {
+    title: "IAPEX 2025 DOT",
+    description: `DOT.
+“Discovering Opportunities in Transdisciplinarity” looks to inspire students and young generations of
+fibre artists, architects, visual artists, designers, technologists, engineers, interdisciplinary practitioners
+by providing a platform to enhance knowledge that lies between the intersections of multiple
+discourses; improvising new avenues of collective academia and practice. By active collaboration
+amongst cross-disciplinary educational institutes and industry practitioners, DOT encourages aspiring
+students of various disciplines receiving direct mentorship from seasoned specialists, to enhance their
+design ideology, gain hands-on experience, experiment within the field and see newer ways of looking
+at art and architecture. We wish to instill within them a passion for discovering fresh avenues through
+transdisciplinary design.
+Curatorial note –
+“Spatial materiality,”
+Kiran Khan
+This show, titled “Spatial materiality,” explores the intersection of textiles and architecture,
+highlighting their roles in shaping our understanding and experience of space. Fibre and textile
+materials are investigated for their tactility, dimension, visuality, and multisensory qualities in a real or
+imagined context. Decoding textiles as skins of spatial intervention; they carry narratives of history,
+memory, identity and context.
+This exhibition shares how textile skins mediate spaces: creating, dividing, covering, and altering
+perceptions to generate new meanings. These acts of mediation are explored through sustainable
+practices that encompass the ecology of making/crafting, while simultaneously reframing our
+relationship with textile waste through reuse and reclamation. These contemporary spatial-material
+exhibits collectively create new meanings and opportunities for interaction within spaces, compelling
+us to reflect on the broader role of textiles as skins in our environment throughout history and into the
+future.
+The exhibition has three thematic strands;
+1. *Architexture: Textile and architectural practices to create a new discourse. Spatial configurations
+that seamlessly integrate the two to create a technology embedded, futuristic/alternate user
+experience.
+2. *Sustainable Practices*: This theme explores eco-friendly approaches to material and making and
+calls for spatial responses that explore fibre-based inquiries and connect to ideas of the green
+revolution.
+3. Historical x Indigenous Continuum*: Showcasing how art-design practitioners reimagine
+local/indigenous materials and respond to historical textile practices intertwined in the -politics of
+trade, global markets, shifting policies, cultural disconnects, from the colonial encounter to the Green
+Revolution.
+This open call for students (current or recent graduates), is rooted in conceptualising textiles as skins
+of spatial investigation. The responses are open to all institutes across Pakistan; as an institutional
+entry or individual. Each proposal is open as an interdisciplinary dialogue where communities
+co-create solutions.
+This exhibition seeks to create a dialogue which aims to serve as a catalyst for collective design. An act
+of caring for our planet. It emphasizes hands-on learning, experimentation, and collaboration, bridging
+the gap between academia and professional practice.`,
+
+    images: [
+      "/iapex/1.webp",
+      "/iapex/2.webp",
+      "/iapex/3.webp",
+      "/iapex/4.webp",
+      "/iapex/5.webp",
+      "/iapex/6.webp",
+      "/iapex/7.webp",
+      "/iapex/8.webp",
+      "/batch25/17.webp",
+      "/batch25/19.webp",
+    ],
   },
   // {
   //   title: "Food As Design",
@@ -120,7 +188,14 @@ const retrospective = {
   title: "Retrospective Textile and Fibre Expressions",
   description:
     "Retrospective: Fibre and Textile Expression” at Articulate Studios, Lahore, showcased works by 21 graduates of BNU’s Textile, Fashion, and Accessory program, celebrating 20 years of the department. Curated by Kiran Khan, Faseeh Saleem, and Eisha Liaqat, the exhibition highlighted how fibre and textile extend beyond craft into powerful forms of contemporary art. From Fahad Hussayn’s sculptural garments and Faseeh Saleem’s visceral video works to poignant installations by Aiman Gillani, Rafia Shafiq, and Anam Khurram, the show explored themes of memory, identity, trauma, and cultural history. The diverse works reaffirmed textile as a dynamic medium that bridges tradition and innovation.",
-  images: ["/ret2.JPG", "/ret1.JPG", "/ret3.webp","/ret5.JPG","/ret6.JPG","/ret7.JPG"],
+  images: [
+    "/ret2.JPG",
+    "/ret1.JPG",
+    "/ret3.webp",
+    "/ret5.JPG",
+    "/ret6.JPG",
+    "/ret7.JPG",
+  ],
   pdfLink: "/pdf/retrospective.pdf",
   videosrc: "/retrospective.mp4",
 };

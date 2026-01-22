@@ -23,6 +23,8 @@ const page = async ({ params }) => {
       { img: "/batch24/13.webp" },
       { img: "/batch24/14.webp" },
       { img: "/batch24/15.webp" },
+      { img: "/batch24/16.JPG" },
+
     ],
     2023: [
       { img: "/batch23/1.webp" },
@@ -67,7 +69,6 @@ const page = async ({ params }) => {
       { img: "/batch21/12.JPG" },
       { img: "/batch21/13.JPG" },
       { img: "/batch21/14.jpg" },
-      { img: "/batch21/15.jpg" },
       { img: "/batch21/16.jpg" },
       { img: "/batch21/17.jpg" },
       { img: "/batch21/18.jpg" },
@@ -129,6 +130,7 @@ const page = async ({ params }) => {
       { img: "/batch16/8.webp" },
       { img: "/batch16/9.webp" },
       { img: "/batch16/10.webp" },
+      { img: "/batch16/11.JPG" },
     ],
     2015: [
       { img: "/batch15/2.webp" },
@@ -153,7 +155,6 @@ const page = async ({ params }) => {
       { img: "/batch11/10.webp" },
     ],
     2010: [
-        { img: "/batch10.webp" },
         { img: "/batch10/1.JPG" },
         { img: "/batch10/2.JPG" },
         { img: "/batch10/3.JPG" },

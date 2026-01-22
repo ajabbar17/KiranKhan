@@ -7,7 +7,7 @@ const Design = () => {
     { id: 1, title: "Kiran Khan As Executive Director", img: "/kk.png", link: "/design-summit/executive-director" },
     { id: 6, title: "Design Summit Opening", img: "/dsopeningnew.JPG", link: "/design-summit/opening" },
     { id: 2, title: "Jugaar", img: "/jugaarnew.jpg", link: "/design-summit/jugaar" },
-    { id: 3, title: "Simultaenity As Design", img: "/simnew.jpeg", link: "/design-summit/simultaenity" },
+    { id: 3, title: "Simultaneity As Design", img: "/simnew.jpeg", link: "/design-summit/simultaneity" },
     { id: 4, title: "Designing Pakistan", img: "/dpnew.JPG", link: "/design-summit/designing-pakistan" },
     { id: 5, title: "Food As Design", img: "/fd/fd1.webp", link: "/design-summit/food-as-design" },
     { id: 7, title: "Pavilions Materiality", img: "/pmnew.JPG", link: "/design-summit/pavilions-materiality" },

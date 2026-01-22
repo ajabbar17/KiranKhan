@@ -9,8 +9,8 @@ export default function Experience() {
       date: "20th June 2025",
     },
     {
-      title: "Juror NCA, Juror final thesis evaluation, Textile department",
-      date: "December 2024",
+      title: "Curator IAPEX DOT EXPO 2025 Under Trialogue Lahore",
+      date: "December 2025",
     },
     {
       title:

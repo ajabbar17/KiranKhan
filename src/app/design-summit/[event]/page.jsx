@@ -8,25 +8,25 @@ const page = async ({ params }) => {
       { img: "/director2.JPG" },
       { img: "/profilenew.JPG" },
       { img: "/kk.webp" },
-      { img: "/kk1.webp" },
     ],
     jugaar: [
       { img: "/jugaar.webp" },
+      { img: "/jugaar3.JPG" },
       { img: "/jugaar/jugaar1.JPG" },
       { img: "/jugaar/jugaar2.JPG" },
       { img: "/jugaar/jugaar3.JPG" },
-      { img: "/jugaar/jugaar4.JPG" },
+      { img: "/jugaar/jugaar10.JPG" },
       { img: "/jugaar/jugaar5.JPG" },
       { img: "/jugaar/jugaar6.JPG" },
       { img: "/jugaar/jugaar7.JPG" },
       { img: "/jugaar/jugaar8.JPG" },
       { img: "/jugaar/jugaar9.JPG" },
-      { img: "/jugaar/jugaar10.JPG" },
-      { img: "/jugaar/jugaar11.JPG" },
+      { img: "/jugaar/jugaar4.JPG" },
     ],
-    simultaenity: [
-      { img: "/sim/sim2.webp" },
+    simultaneity: [
+      { img: "/sim/sim5.JPG" },
       { img: "/sim/sim3.webp" },
+      { img: "/sim/sim4.jpg" },
       { img: "/sim/sim1.JPG" },
       { img: "/sim/sim2.JPG" },
       { img: "/jugaar4.jpg" },
@@ -40,33 +40,30 @@ const page = async ({ params }) => {
       { img: "/dp2.JPG" },
     ],
     "food-as-design": [
-      { img: "/fd/fd1.webp" },
-      { img: "/fd/fd2.webp" },
-      { img: "/fd/fd3.webp" },
+      { img: "/fd/fd4.JPG" },
+      { img: "/fd/fd5.jpg" },
+      { img: "/fd/fd6.JPG" },
       { img: "/fd1.jpg" },
       { img: "/fd2.JPG" },
       { img: "/fd3.JPG" },
+      { img: "/fd/fd7.JPG" },
+      { img: "/fd/fd8.JPG" },
       { img: "/fd4.JPG" },
-
-      
     ],
-    "opening": [
-      { img: "/ds2.webp" },
+    opening: [
       { img: "/ds.webp" },
       { img: "/ds1.webp" },
+      { img: "/ds6.JPG" },
       { img: "/ds1.JPG" },
       { img: "/ds2.JPG" },
       { img: "/ds3.JPG" },
       { img: "/ds4.JPG" },
       { img: "/ds5.JPG" },
-      { img: "/ds6.JPG" },
-      { img: "/ds7.JPG" },
-
-      
+      { img: "/ds8.JPG" },
     ],
     "pavilions-materiality": [
       { img: "/pm4.JPG" },
-      { img: "/pm/pm2.webp" },
+      { img: "/pm/pm4.JPG" },
       { img: "/pm5.JPG" },
       { img: "/pm/pmnew1.jpg" },
       { img: "/pm/pmnew2.jpg" },
@@ -74,16 +71,12 @@ const page = async ({ params }) => {
       { img: "/pm/pmnew4.jpg" },
       { img: "/pm/pmnew5.JPG" },
       { img: "/pm/pmnew6.JPG" },
-      
-      
-     
     ],
     "performance-as-design": [
       { img: "/pad1.JPG" },
       { img: "/pad2.JPG" },
-      { img: "/pad3.JPG" },
       { img: "/padnew1.JPG" },
-      
+      { img: "/pad3.JPG" },
     ],
   };
 
@@ -101,7 +94,7 @@ const page = async ({ params }) => {
 
         {/* Check if images exist for this year */}
         {images.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {images.map((item, index) => (
               <div key={index} className="w-full">
                 <Image
@@ -109,7 +102,7 @@ const page = async ({ params }) => {
                   alt={`Batch ${event} - Image ${index + 1}`}
                   width={800}
                   height={600}
-                  className="w-full h-64 md:h-80 lg:h-[70vh] object-fill shadow-lg"
+                  className="w-auto h-64 md:h-80 lg:h-auto object-fill shadow-lg"
                   priority={index < 4} // preload first 2
                 />
               </div>
@@ -131,7 +124,7 @@ export async function generateStaticParams() {
   return [
     { event: "executive-director" },
     { event: "jugaar" },
-    { event: "simultaenity" },
+    { event: "simultaneity" },
     { event: "designing-pakistan" },
     { event: "food-as-design" },
     { event: "opening" },

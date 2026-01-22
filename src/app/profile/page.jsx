@@ -43,10 +43,7 @@ const page = () => {
   return (
     <div>
         {/* <Exhibitions    /> */}
-        <Design />
-        <ProjectAccordions />
-        <Experience />
-        <h1 className='heading text-3xl md:text-5xl font-bold text-center uppercase tracking-wider'>Seminars / Talks</h1>
+        <h1 className='heading text-3xl md:text-5xl font-bold text-center mt-20 uppercase tracking-wider'>Seminars / Talks</h1>
         {
           data.map((item) => (
             <div key={item.id} className='my-10'>
@@ -55,6 +52,9 @@ const page = () => {
             </div>
           ))
         }
+        {/* <Design /> */}
+        <ProjectAccordions />
+        <Experience />
         {/* <Teaching /> */}
 
     </div>
