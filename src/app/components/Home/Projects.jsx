@@ -1,15 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const projects = [
-  { id: 1, title: "Jugaar", img: "/project1.webp" },
-  { id: 2, title: "Surangla Punjab", img: "/sp/sp2.webp" },
-  { id: 3, title: "Kiran Khan as Executive Director", img: "/profile.webp" },
-  { id: 4, title: "Collboration With Liz Williamson", img: "/project4.webp" },
-  { id: 5, title: "Artpreneurial", img: "/ap/ap4.webp" },
-  { id: 6, title: "Death Of Booti", img: "/iaf/iaf1.webp" },
-  { id: 7, title: "Islamic Art Festival", img: "/iaf/iaf3.webp" },
-  { id: 8, title: "Retrospective", img: "/ret2.JPG" },
+  { id: 1, title: "Design Summit", img: "/project1.webp", link: "/design-summit" },
+  { id: 2, title: "Surangla Punjab", img: "/sp/sp2.webp" , link:"/exhibitions" },
+  { id: 3, title: "Kiran Khan as Executive Director", img: "/profile.webp", link:"/design-summit/executive-director" },
+  { id: 4, title: "Collboration With Liz Williamson", img: "/project4.webp",link:"/exhibitions" },
+  { id: 5, title: "Womanifesto", img: "/womenifesto/2.webp" , link:"/womanifesto" },
+  { id: 6, title: "Death Of Booti", img: "/iaf/iaf1.webp", link: "/death-of-booti" },
+  { id: 7, title: "Islamic Art Festival", img: "/iaf/iaf3.webp", link: "/exhibitions" },
+  { id: 8, title: "Retrospective", img: "/ret2.JPG", link: "/exhibitions" },
 ];
 
 export default function Projects() {
@@ -22,6 +23,7 @@ export default function Projects() {
       {/* Responsive Grid */}
       <div className="w-full flex justify-center items-center">
         <div className="grid w-full max-w-3xl gap-2 grid-cols-1 place-content-center sm:grid-cols-1 md:grid-cols-3 ">
+          
           {projects.map((project) => (
             <div
               key={project.id}
@@ -45,6 +47,9 @@ export default function Projects() {
               }
             `}
             >
+              <Link href={
+                project.link
+              }>
               {/* Background Image */}
               <Image
                 width={800}
@@ -61,6 +66,7 @@ export default function Projects() {
                   {project.title}
                 </span>
               </div>
+              </Link>
             </div>
           ))}
         </div>

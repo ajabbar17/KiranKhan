@@ -55,10 +55,10 @@ const page = async ({ params }) => {
       { img: "/ds1.webp" },
       { img: "/ds6.JPG" },
       { img: "/ds1.JPG" },
-      { img: "/ds2.JPG" },
+      { img: "/ds2.jpg" },
       { img: "/ds3.JPG" },
       { img: "/ds4.JPG" },
-      { img: "/ds5.JPG" },
+      { img: "/ds5.jpg" },
       { img: "/ds8.JPG" },
     ],
     "pavilions-materiality": [
