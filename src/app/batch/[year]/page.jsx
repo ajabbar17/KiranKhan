@@ -3,6 +3,37 @@ import ImageModal from "@/app/components/ImageModal";
 
 const page = async ({ params }) => {
   const batchData = {
+    2026: [
+      { img: "/batch26/1.webp" },
+      { img: "/batch26/2.webp" },
+      { img: "/batch26/3.webp" },
+      { img: "/batch26/4.webp" },
+      { img: "/batch26/5.webp" },
+      { img: "/batch26/6.webp" },
+      { img: "/batch26/7.webp" },
+      { img: "/batch26/8.webp" },
+      { img: "/batch26/9.webp" },
+      { img: "/batch26/10.webp" },
+      { img: "/batch26/11.webp" },
+      { img: "/batch26/12.webp" },
+      { img: "/batch26/13.webp" },
+      { img: "/batch26/14.webp" },
+      { img: "/batch26/15.webp" },
+      { img: "/batch26/16.webp" },
+      { img: "/batch26/17.webp" },
+      { img: "/batch26/18.webp" },
+      { img: "/batch26/19.webp" },
+      { img: "/batch26/20.webp" },
+      { img: "/batch26/21.webp" },
+      { img: "/batch26/22.webp" },
+      { img: "/batch26/23.webp" },
+      { img: "/batch26/24.webp" },
+      { img: "/batch26/25.webp" },
+      { img: "/batch26/26.webp" },
+      { img: "/batch26/27.webp" },
+      { img: "/batch26/28.webp" },
+    ],
+
     2025: [
       { img: "/batch25/5.webp" },
       { img: "/batch25/6.webp" },

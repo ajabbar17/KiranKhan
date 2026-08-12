@@ -18,19 +18,19 @@ const exhibitions = [
       "/sp/sp6.webp",
     ],
   },
-  // {
-  //   title: "Artpreneurial",
-  //   description:
-  //     "Artpreneurial is an exhibition that showcases the intersection of art and entrepreneurship. It features works from artists who have successfully turned their creative passions into thriving businesses. The exhibition highlights the innovative ways in which artists are leveraging technology, social media, and other tools to reach new audiences and build sustainable careers. Through a variety of mediums, including painting, sculpture, photography, and digital art, Artpreneurial celebrates the entrepreneurial spirit of artists and their ability to adapt and thrive in a rapidly changing world.",
-  //   pdfLink: "/pdf/artpreneurial.pdf",
-  //   images: [
-  //       "/ap/ap1.webp",
-  //       "/ap/ap2.webp",
-  //       "/ap/ap3.webp",
-  //       "/ap/ap4.webp",
-  //       "/ap/ap5.webp",
-  //   ]
-  // },
+  {
+    title: "Domestic Provocations",
+
+    images: [
+      "/dp/3.webp",
+      "/dp/1.webp",
+      "/dp/2.webp",
+      "/dp/4.webp",
+      "/dp/5.webp",
+      "/dp/6.webp",
+      "/dp/7.webp",
+    ],
+  },
   {
     title: "Islamic Art Festival",
     description:
