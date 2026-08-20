@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.1 }}
         >
-          Head of department Textile Fashion & Accessories <br />
+          Head of Department Textile Fashion & Accessories <br />
           Beaconhouse National University (BNU) <br />
           An Interdisciplinary Fibre Artist <br />
           With an Experience of Over 30+ Years

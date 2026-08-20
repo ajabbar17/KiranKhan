@@ -9,7 +9,7 @@ const Hero = () => {
       style={{ backgroundImage: "url('/womenifesto/hero.webp')" }}
     >
       {/* Content */}
-      <div className="relative z-10 xl:max-w-5xl mx-auto px-6 text-white">
+      <div className="relative z-10 xl:max-w-5xl mx-auto text-center px-6 text-white">
         {/* Title + Date */}
         <div className="flex justify-center items-center mb-6">
           <motion.h1
@@ -25,7 +25,7 @@ const Hero = () => {
 
         {/* Description */}
         <motion.div
-          className="bg-black/55 p-2 md:px-5 md:py-9  rounded-3xl flex-col flex"
+          className="bg-black/55 p-2 md:px-5 md:py-9 mb-5 rounded-3xl flex-col flex"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
@@ -67,6 +67,9 @@ const Hero = () => {
             together individual voices into a collective social identity.
           </motion.p>
         </motion.div>
+        <a 
+        href="/pdf/BOOK - Fabric as social identity.pdf" download rel="noopener noreferrer"
+        className="text-xl px-5 py-3 rounded-3xl text-white bg-[#F49440] hover:bg-transparent hover:border transition-all cursor-pointer">Download Pdf</a>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ export default function ProjectAccordions() {
       id: "01",
       title: "Project lead Womanifesto WeMend Project",
       date: "August 2024 - Oct 2024",
-      collab: "Lahore Biennale Foundation and Dept of TFA",
+      collab: "Lahore Biennale Foundation, Womanifesto & Department of TFA",
       description:
         "Project exhibited at Sharjah Biennale 2025 at Flying Saucer Sharjah",
     },
@@ -36,7 +36,7 @@ export default function ProjectAccordions() {
       title:
         "BNU x Kaarvan Workshop: Bridging Urban-Rural Voices on Rural Women's Day",
       date: "October 2017",
-      collab: "Kaarvan Crafts Foundation and the Textile Department",
+      collab: "Kaarvan Crafts Foundation and the Department of TFA",
       description:
         "In celebration of Rural Women’s Day, BNU’s Textile Department and Kaarvan Crafts Foundation co-hosted a workshop aimed at breaking down the concept of “otherness” through storytelling and dialogue. Focused on inclusivity and expression, the workshop created a shared learning space between urban students and marginalized rural women from regions like Bahawalpur, Bahawalnagar, and Kasur. It fostered empathy, challenged societal norms set by the elite, and sought to blur boundaries between city and village, privilege and poverty, men and women.",
     },
